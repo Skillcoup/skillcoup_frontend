@@ -7,6 +7,7 @@ import "./Blogs.css";
 const Blogs= () => {
     return(
         <>
+        {/*  */}
         
     {/* <!-- Recent Blog Posts --> */}
     <div class="section padding-top-55 padding-bottom-55">
