@@ -15,7 +15,7 @@ body{
 }
 .navbar{
     background-color:var(--header-blue);
-    height: 76px;
+    height: 81px;
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     z-index: 99;
 
