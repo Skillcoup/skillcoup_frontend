@@ -1,11 +1,16 @@
-import logo from "./logo.svg";
+
 import "./App.css";
-import Footer from "./components/Footer";
+import { Routes, Route, Link } from "react-router-dom";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
     <div className="App">
-      <Footer />
+      <Routes>
+        <Route path="/" element = {<Home />} />
+        <Route path="contact" element={<Contact />} />
+      </Routes>
     </div>
   );
 }
