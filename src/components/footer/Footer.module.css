@@ -1,0 +1,36 @@
+.footer {
+  background-color: #0b264e;
+}
+
+.footer p,
+.footer i {
+  color: #fff;
+}
+
+.footer h6 {
+  color: #35cdff;
+  font-size: 1.2rem;
+}
+
+.follow {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.btn,
+.btn:hover,
+.btn:focus,
+.btn:active {
+  text-transform: none;
+  background-color: #35cdff;
+  border-radius: 0.3rem;
+  font-size: 1rem;
+}
+
+#email {
+  background-color: #223d66;
+}
+
+#email::placeholder {
+  color: #fff;
+}

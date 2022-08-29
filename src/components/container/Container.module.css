@@ -1,0 +1,38 @@
+.fluid {
+  background-color: #072756;
+  padding: 4rem 0;
+}
+
+.container {
+  background-color: #ffffff;
+  border-radius: 1rem;
+  padding: 2.5rem 5rem;
+}
+
+@media (max-width: 1240px) and (min-width: 768px) {
+  .container {
+    padding: 2.5rem 6rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding: 2.5rem 5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 1.5rem 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .fluid {
+    padding: 4rem 2rem;
+  }
+  
+  .container {
+    width: auto;
+  }
+}

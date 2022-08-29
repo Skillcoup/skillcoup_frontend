@@ -1,0 +1,40 @@
+.navbar-nav {
+  color: #fff !important;
+}
+
+.logo {
+  max-width: 120px;
+  height: auto;
+}
+
+.navbar {
+  background-color: #072756 !important;
+}
+
+.btn,
+.btn:hover,
+.btn:focus,
+.btn:active {
+  text-transform: none;
+  background-color: #35cdff;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    flex-wrap: nowrap;
+  }
+}
+
+@media (max-width: 992px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+  
+  .navbarCollapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+  }
+}

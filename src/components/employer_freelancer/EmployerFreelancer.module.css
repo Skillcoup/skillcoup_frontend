@@ -1,0 +1,62 @@
+.heading {
+  text-align: center;
+  font-weight: 400;
+  margin-bottom: 2.5rem;
+  font-size: 1.75rem;
+}
+
+.card {
+  padding: 2rem;
+  height: 360px;
+  border-radius: 0.5rem;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.card1 {
+  background: url("../../assets/blog-06a.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  flex-direction: column;
+  color: #fff;
+}
+
+.card2 {
+  background: url("../../assets/blog-07a.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-direction: column;
+  color: #fff;
+}
+
+.title {
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+.sub-title {
+  font-weight: 400;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 576px) {
+  .card {
+    padding: 0;
+  }
+
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .sub-title {
+    font-size: 0.95rem;
+  }
+}
