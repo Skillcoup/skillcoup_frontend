@@ -7,6 +7,7 @@
     width: 100%; 
     position: absolute;
     z-index: -2;
+    left:0;
   }
   
   
@@ -181,6 +182,7 @@
   
   .contact-location-info ul li {
     padding: 2px 0;
+    text-align: left;
   }
   
   .contact-location-info .freelancer-socials {
@@ -217,7 +219,7 @@
       background-attachment: fixed;
       background-size: cover;
       display: block;
-      position: absolute;
+      position: relative;
       width: 100%;
   }
   
@@ -400,8 +402,17 @@
   margin: 0px;
 }
 
+.follow-us{
+  flex-wrap: wrap;
+  height: 250px;
+  padding:36px;
+}
+
 .bgimage_container{
-    height: 300px;
-    position: relative;
+    height: 100%;
+    padding-bottom: 25px;
+    /* position: relative; */
+    background-repeat:no-repeat;
+    background-size:100% 100%;
     top: 600px;
 }

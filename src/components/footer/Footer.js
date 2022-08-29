@@ -8,7 +8,7 @@ import {
 } from "mdb-react-ui-kit";
 import classes from "./Footer.module.css";
 
-export default function Footer() {
+const Footer = () => {
   return (
     <MDBFooter bgColor="light" className="text-center text-lg-start text-muted">
       <section className={`pt-4 ${classes.footer}`}>
@@ -138,3 +138,5 @@ export default function Footer() {
     </MDBFooter>
   );
 }
+
+export default Footer
