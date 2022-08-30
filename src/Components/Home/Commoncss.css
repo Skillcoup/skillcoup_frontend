@@ -1,0 +1,27 @@
+.section-headline {
+    display: block;
+    position: relative;
+    padding-right: 20%;
+}
+
+.margin-bottom-35 {
+    margin-bottom: 35px !important;
+}
+
+.section-headline.centered {
+    text-align: center;
+    padding: 0;
+    
+}
+.margin-bottom-65 {
+    margin-bottom: 65px !important;
+}
+.padding-top-65 {
+    padding-top: 65px !important;
+}
+.padding-65 {
+    padding: 65px !important;
+}
+.section{
+    display: block;
+}
