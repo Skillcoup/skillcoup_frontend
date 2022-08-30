@@ -17,32 +17,32 @@ const Footer = () => {
             <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
               <h6 className="fw-bold mb-3">Explore</h6>
               <p className="mb-2">
-                <a href="#!" className="text-reset">
+                <a href="#" className="text-reset">
                   Design
                 </a>
               </p>
               <p className="mb-2">
-                <a href="#!" className="text-reset">
+                <a href="#" className="text-reset">
                   Digital Marketing
                 </a>
               </p>
               <p className="mb-2">
-                <a href="#!" className="text-reset">
+                <a href="#" className="text-reset">
                   Writing and Translation
                 </a>
               </p>
               <p className="mb-2">
-                <a href="#!" className="text-reset">
+                <a href="#" className="text-reset">
                   Photography
                 </a>
               </p>
               <p className="mb-2">
-                <a href="#!" className="text-reset">
+                <a href="#" className="text-reset">
                   Music and Audio
                 </a>
               </p>
               <p className="mb-2">
-                <a href="#!" className="text-reset">
+                <a href="#" className="text-reset">
                   Video and Animation
                 </a>
               </p>
@@ -50,27 +50,27 @@ const Footer = () => {
             <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
               <h6 className="fw-bold mb-3">About us</h6>
               <p className="mb-2">
-                <a href="#!" className="text-reset">
+                <a href="#" className="text-reset">
                   Team
                 </a>
               </p>
               <p className="mb-2">
-                <a href="#!" className="text-reset">
+                <a href="#" className="text-reset">
                   FAQs
                 </a>
               </p>
               <p className="mb-2">
-                <a href="#!" className="text-reset">
+                <a href="#" className="text-reset">
                   Contact Us
                 </a>
               </p>
               <p className="mb-2">
-                <a href="#!" className="text-reset">
+                <a href="#" className="text-reset">
                   Private Policy
                 </a>
               </p>
               <p className="mb-2">
-                <a href="#!" className="text-reset">
+                <a href="#" className="text-reset">
                   Terms of Service
                 </a>
               </p>
@@ -83,23 +83,23 @@ const Footer = () => {
                 </a>
               </p>
               <p className="mb-2">
-                <a href="#!" className="text-reset">
+                <a href="#" className="text-reset">
                   My Account
                 </a>
               </p>
               <p>Follow Us</p>
               <MDBRow>
                 <MDBCol>
-                  <a href="" className="me-4 text-reset">
+                  <a href="#" className="me-4 text-reset">
                     <MDBIcon fab icon="instagram" />
                   </a>
-                  <a href="" className="me-4 text-reset">
+                  <a href="#" className="me-4 text-reset">
                     <MDBIcon fab icon="facebook-f" />
                   </a>
-                  <a href="" className="me-4 text-reset">
+                  <a href="#" className="me-4 text-reset">
                     <MDBIcon fab icon="linkedin" />
                   </a>
-                  <a href="" className="me-4 text-reset">
+                  <a href="#" className="me-4 text-reset">
                     <MDBIcon fab icon="twitter" />
                   </a>
                 </MDBCol>
