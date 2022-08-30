@@ -15,7 +15,7 @@ body{
 }
 .intro-banner{
     background-color: var(--header-blue);
-    background-image: url('../../assets/Rectangle.png');
+    background-image: url('../../assets/backgroundimg.jpg');
     width: 100%;
     height: 110vh;
     margin-bottom: 100px;
