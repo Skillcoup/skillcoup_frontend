@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.about-us-intro{
+    background-color: var(--header-blue);
+    background-image: url('https://res.cloudinary.com/skillcoup/image/upload/v1661928840/about_us/about_us_bg_gjf53a.png');
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (min-width: 880px) {
+    .about-us-intro img{
+        margin-top: 120px;
+    }
+
+    .about-us-intro .container .row .right{
+        margin-top: 200px;
+    }
+}
+
+.about-us-intro .img{
+    width: 100%;
+}
+
+.about-us-intro .container .row .right h1{
+    color: #FFF;
+    text-align: end;
+    font-weight:200;
+    line-height: 3.5rem;
+    margin-bottom: 18px;
+}
+
+.about-us-intro .container .row .right h4{
+    color: #35cdff;
+    text-align: end;
+    font-weight:200;
+    line-height: 3.5rem;
+    margin-bottom: 14px;
+}
+
+.about-us-intro .container .row .right button{
+    background-color: #35cdff;
+    color: #072756;
+    font-weight:500;
+    margin-bottom: 14px;
+    text-transform: capitalize;
+}
+
+.about-us-feature{
+    padding: 54px 24px 54px 24px;
+}
+
+.about-us-feature span::before{
+    content: url("data:image/svg+xml,%3Csvg width='20' height='18' viewBox='0 0 25 23' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M12.0591 2.77033C6.73107 2.77033 2.41182 6.69691 2.41182 11.5406C2.41182 16.3843 6.73107 20.3109 12.0591 20.3109C17.3872 20.3109 21.7064 16.3843 21.7064 11.5406C21.7064 6.69691 17.3872 2.77033 12.0591 2.77033ZM0 11.5406C0 5.48599 5.39905 0.577759 12.0591 0.577759C18.7192 0.577759 24.1182 5.48599 24.1182 11.5406C24.1182 17.5952 18.7192 22.5034 12.0591 22.5034C5.39905 22.5034 0 17.5952 0 11.5406ZM17.6839 7.98051C18.1817 8.38276 18.2266 9.07569 17.7841 9.52822L11.3525 16.1059C11.1237 16.34 10.7957 16.4739 10.4512 16.4739C10.1068 16.4739 9.77877 16.34 9.54993 16.1059L6.33416 12.8171C5.89169 12.3645 5.93653 11.6716 6.43431 11.2694C6.93209 10.8671 7.69431 10.9079 8.13678 11.3604L10.4512 13.7275L15.9815 8.07156C16.4239 7.61903 17.1862 7.57827 17.6839 7.98051Z' fill='%23072756'/%3E%3C/svg%3E%0A");
+    padding: 2px 4px 2px 2px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.about-us-content{
+    padding: 14px 0px 34px 0px;
+}
+
+.about-us-content h3{
+    color: #072756;
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+    text-decoration-color: #35cdff;
+    transition: 1s;
+    margin-bottom: 34px;
+}
+
+.about-us-content .content{
+    background-color: #ecf0f7;
+    color: #363333;
+    border-radius: 24px;
+    padding: 54px;
+    width: 100%;
+}
+
+.about-us-content .content .bold{
+    color: #072756;
+    font-weight: 700;
+}
+
+.about-us-invite {
+    background-attachment: fixed;
+    background-size: cover;
+    display: block;
+    position: relative;
+    width: 100%;
+}
+
+.about-us-invite:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #333;
+  opacity: 0.65;
+  display: block;
+  position: absolute;
+  top: 0;
+}
+
+.about-us-invite .container .row{
+    padding: 0px 64px 0px 64px;
+}
+
+.about-us-invite .container .row h2{
+    line-height: 3rem;
+}
+.about-us-invite button{
+    background-color: #ff4848;
+    color: #FFF;
+    font-weight:500;
+    margin-bottom: 14px;
+    text-transform: capitalize;
+    width: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 24px;
+}
