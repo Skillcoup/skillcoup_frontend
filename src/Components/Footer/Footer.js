@@ -50,36 +50,36 @@ const Footer = () => {
             <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
               <h6 className="fw-bold mb-3">About us</h6>
               <p className="mb-2">
-                <a href="#" className="text-reset">
+                <a href="https://skillcoup.com/about-us" className="text-reset">
                   Team
                 </a>
               </p>
-              <p className="mb-2">
+              {/* <p className="mb-2">
                 <a href="#" className="text-reset">
                   FAQs
                 </a>
-              </p>
+              </p> */}
               <p className="mb-2">
-                <a href="#" className="text-reset">
+                <a href="https://skillcoup.com/contact" className="text-reset">
                   Contact Us
                 </a>
               </p>
-              <p className="mb-2">
+              {/* <p className="mb-2">
                 <a href="#" className="text-reset">
                   Private Policy
                 </a>
-              </p>
-              <p className="mb-2">
+              </p> */}
+              {/* <p className="mb-2">
                 <a href="#" className="text-reset">
                   Terms of Service
                 </a>
-              </p>
+              </p> */}
             </MDBCol>
             <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-3">My Account</h6>
+              <h6 className="text-uppercase fw-bold mb-3">My Account (Coming Soon!)</h6>
               <p className="mb-2">
                 <a href="#!" className="text-reset">
-                  Login
+                  Login 
                 </a>
               </p>
               <p className="mb-2">
@@ -109,17 +109,17 @@ const Footer = () => {
               <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
               <p>
                 <MDBIcon icon="home" className="me-2" />
-                New York, NY 10012, US
+                Pune,Maharashtra,India
               </p>
               <p>
                 <MDBIcon icon="envelope" className="me-3" />
-                info@example.com
+                admin@skillcoup.com
               </p>
               <p>
-                <MDBIcon icon="phone" className="me-3" /> + 01 234 567 88
+                <MDBIcon icon="phone" className="me-3" /> +91 91321 99090
               </p>
               <p>
-                <MDBIcon icon="print" className="me-3" /> + 01 234 567 89
+                <MDBIcon icon="phone" className="me-3" /> +91 96653 27466
               </p>
             </MDBCol>
           </MDBRow>
