@@ -15,7 +15,7 @@ const Footer = () => {
         <MDBContainer className="text-center text-md-start">
           <MDBRow className="mt-3">
             <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
-              <h6 className="fw-bold mb-3">Explore</h6>
+              <h6 className="fw-bold mb-3">We Serve For</h6>
               <p className="mb-2">
                 <a href="#" className="text-reset">
                   Design
@@ -48,7 +48,7 @@ const Footer = () => {
               </p>
             </MDBCol>
             <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
-              <h6 className="fw-bold mb-3">About us</h6>
+              <h6 className="fw-bold mb-3">Company</h6>
               <p className="mb-2">
                 <a href="https://skillcoup.com/about-us" className="text-reset">
                   Team
@@ -77,7 +77,7 @@ const Footer = () => {
             </MDBCol>
             <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
               <h6 className="text-uppercase fw-bold mb-3">My Account (Coming Soon!)</h6>
-              <p className="mb-2">
+              {/* <p className="mb-2">
                 <a href="#!" className="text-reset">
                   Login 
                 </a>
@@ -86,7 +86,7 @@ const Footer = () => {
                 <a href="#" className="text-reset">
                   My Account
                 </a>
-              </p>
+              </p> */}
               <p>Follow Us</p>
               <MDBRow>
                 <MDBCol>
@@ -105,7 +105,7 @@ const Footer = () => {
                 </MDBCol>
               </MDBRow>
             </MDBCol>
-            <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
+            {/* <MDBCol md="4" lg="3" xl="3" className="mx-auto mb-md-0 mb-4">
               <h6 className="text-uppercase fw-bold mb-4">Contact</h6>
               <p>
                 <MDBIcon icon="home" className="me-2" />
@@ -121,7 +121,7 @@ const Footer = () => {
               <p>
                 <MDBIcon icon="phone" className="me-3" /> +91 96653 27466
               </p>
-            </MDBCol>
+            </MDBCol> */}
           </MDBRow>
         </MDBContainer>
       </section>

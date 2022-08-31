@@ -29,9 +29,9 @@ const AboutComponent = () => {
               </h1>
               <h4>India ka apna freelancing platform</h4>
               {/* <div className="getStartedButtonDiv"> */}
-                <button type='button' className='btn btn-primary btn-lg float-end'>
-                  Get Started
-                </button>
+              <button type='button' className='btn btn-primary btn-lg float-end'>
+                Get Started
+              </button>
               {/* </div> */}
             </div>
           </div>
@@ -100,6 +100,42 @@ const AboutComponent = () => {
           </div>
         </div>
       </div>
+
+      {/* <div className='about-us-faq mt-24'>
+        <div className="container">
+          <div className="row float-center">
+            <h3>Frquently Asked Questions</h3>
+            <div className="accordion" id="accordionExample">
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="headingOne">
+                  <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Questions from the user, customer 1 ?
+                  </button>
+                </h2>
+                <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                  <div className="accordion-body">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </div>
+                </div>
+              </div>
+
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="headingTwo">
+                  <button className="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                    Questions from the user, customer 2 ?
+                  </button>
+                </h2>
+                <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                  <div className="accordion-body">
+                    Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div> */}
 
       <div className='mt-25'>
         <Footer />

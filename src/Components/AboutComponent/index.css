@@ -132,3 +132,33 @@ body{
     margin-right: auto;
     margin-top: 24px;
 }
+
+.about-us-faq{
+    margin: 54px 0px 54px 0px;
+}
+
+.about-us-faq h3{
+    color: #072756;
+    margin: 0;
+    padding: 0;
+    text-decoration: underline;
+    text-decoration-color: #35cdff;
+    transition: 1s;
+    margin-bottom: 34px;
+}
+
+.about-us-faq .accordion .accordion-item{
+    margin: 24px;
+    border: 0px;
+    background-color: #ecf0f7;
+}
+
+.about-us-faq .accordion .accordion-item .accordion-header .accordion-button{
+    border: 0px;
+    background-color: #ecf0f7;
+    color: #072756;
+}
+
+.about-us-faq .accordion .accordion-item .accordion-body{
+    text-align: left;
+}
