@@ -6,6 +6,7 @@
 }
 body{
     font-family: 'Poppins', sans-serif;
+    padding: 0px;
 }
 :root{
     --primary-blue:#18A0FB;
@@ -23,6 +24,7 @@ body{
     background-size: cover;
     background-position: -23px -98px;
     padding:20px;
+    padding-top: 150px;
 }
 
 .intro-banner .container-fluid{
@@ -89,3 +91,78 @@ img {
 .section {
     display: block;
 }
+
+.intro-stats {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.intro-stats li {
+    flex: auto;
+    flex-grow: 0;
+    margin-right: 35px;
+    padding-right: 35px;
+}
+
+
+
+.intro-stats li span,
+.intro-stats li strong {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.intro-stats li strong {
+    font-weight: 600;
+    color: rgb(247, 246, 246);
+    font-size: 28px;
+    margin-bottom: 2px;
+}
+
+.intro-stats li span {
+    font-weight: 300;
+    color: #888;
+    font-size: 18px;
+}
+
+.projectcounter{
+    padding-top: 50px;
+    padding-left: 20px;
+}
+
+@property --num {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+  }
+  
+  .counter1 {
+    animation: counter 5s  ease-in-out;
+    counter-reset: num var(--num);
+    font: 800 40px system-ui;
+    --num: 150;
+    display: inline;
+    color: azure;
+  }
+  .counter1::after {
+    content: counter(num);
+  }
+  
+  @keyframes counter {
+    from {
+      --num: 0;
+    }
+    to {
+      --num: 150;
+    }
+  }
+
+  .plus{
+    display: inline;
+    color: azure;
+    font: 800 40px system-ui;
+  }
+  

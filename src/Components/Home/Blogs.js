@@ -10,14 +10,14 @@ const Blogs= () => {
         {/*  */}
         
     {/* <!-- Recent Blog Posts --> */}
-    <div class="section padding-top-55 margin-bottom padding-bottom-55 container">
+    <div class="section padding-top-55 margin-bottom-55 padding-bottom-55 container">
         <div class="container">
             <div class="row blog-row">
                 <div class="col-xl-12 col-md-10 col-sm-9">
 
                     {/* <!-- Section Headline --> */}
-                    <div class="section-headline centered margin-top-0 margin-bottom-55">
-                        <h3>Our Blogs</h3>
+                    <div class="section-headline centered margin-top-55 margin-bottom-55">
+                        <h3 style={{paddingBottom: "50px"}} >Our Blogs</h3>
                         {/* <!--<a href="pages-blog.html" class="headline-link">View Blog</a> --> */}
                     </div>
 

@@ -40,14 +40,14 @@ const Client = () => {
                              <div class="row">
                                 <div class="col-md-6 client-btn" >
                                     <div class="post-job-container">
-                                        <h3>Explore Freelancer <br />Profile</h3>
+                                        <h3>Get Your First Job  <br />Done</h3>
                                         <p>Get Started &nbsp;<i class="icon-material-outline-arrow-forward"></i></p>
                                     </div>
                                 </div>
 
                                 <div class="col-md-6" >
                                     <div class="post-job-container">
-                                        <h3>Set up Your First <br />Project</h3>
+                                        <h3>Get Me The Best <br />Talent</h3>
                                         <p>Get Started &nbsp;<i class="icon-material-outline-arrow-forward"></i></p>
 
                                     </div>

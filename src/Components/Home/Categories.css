@@ -82,3 +82,20 @@
         margin-right: 0px;
     }
 }
+
+.section-headline h3 {
+    display: block;
+    font-size: 26px;
+    color: #333;
+}
+
+.section-headline h3::after {
+    content: '';
+    width: 10%;
+    height: 2px;
+    background: var(--primary-color);
+    display: block;
+    left: 45%;
+    position: absolute;
+    bottom: -25%;
+}

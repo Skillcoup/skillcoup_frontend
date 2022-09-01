@@ -43,80 +43,73 @@ const Testimonials = () => {
                                     <img src={Siddhi} alt="" />
 
                                 </div>
-                                <p class="testimonial">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam at, luctus dui. Mauris magna metus, dapibus nec turpis vel, semper malesuada ante. Idac bibendum scelerisque non non purus. Suspendisse varius nibh non aliquet.</p>
-                                <p class="overview"><b>Paula Wilson</b>, Media Analyst</p>
+                                <p class="testimonial">It was a very nice experience working with the skillcoup. They are doing a good job. Best of luck for a bright future.</p>
+                                <p class="overview"><b>Siddhi Keskar</b>, Content Writer</p>
                             </div>
                             <div class="carousel-item">
                                 <div class="img-box">
                                     <img src={Ajinkya} alt="" />
 
                                 </div>
-                                <p class="testimonial">Vestibulum quis quam ut magna consequat faucibus. Pellentesque eget nisi a mi suscipit tincidunt. Utmtc tempus dictum risus. Pellentesque viverra sagittis quam at mattis. Suspendisse potenti. Aliquam sit amet gravida nibh, facilisis gravida odio.</p>
-                                <p class="overview"><b>Antonio Moreno</b>, Web Developer</p>
+                                <p class="testimonial">Great experience working with skillcoup.</p>
+                                <p class="overview"><b>Ajinkya Shinde</b>, Content Writer</p>
                             </div>
                             <div class="carousel-item">
                                 <div class="img-box">
                                     <img src={Kalyan} alt="" />
 
                                 </div>
-                                <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
-                                <p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
+                                <p class="testimonial">We are glad to work with skillcoup. Mediators are very responsive and professional. We await to work further with you.</p>
+                                <p class="overview"><b>Kalyan Kumar</b>, Founder at Kubuni Creations</p>
                             </div>
                             <div class="carousel-item">
                                 <div class="img-box">
                                     <img src={Mamta} alt="" />
 
                                 </div>
-                                <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
-                                <p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
+                                <p class="testimonial">I have been working with them for a couple of months only but the service, creativity they have is fabulous. Great Work.</p>
+                                <p class="overview"><b>Mamta Bagrecha</b>, Founder at Evren Solutions</p>
                             </div>
                             <div class="carousel-item">
                                 <div class="img-box">
                                     <img src={Priya} alt="" />
 
                                 </div>
-                                <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
-                                <p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
+                                <p class="testimonial">Happy with the deliverables. If you are looking for budget friendly services this is a great place.</p>
+                                <p class="overview"><b>Priya Srivastava</b>, Founder at The Ravya</p>
                             </div>
                             <div class="carousel-item">
                                 <div class="img-box">
                                     <img src={Shailendra} alt="" />
 
                                 </div>
-                                <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
-                                <p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
+                                <p class="testimonial">I am happy and satisfied with the freelancers provided by Skillcoup. I get work done on time. I would like to work with skillcoup in future also.</p>
+                                <p class="overview"><b>Shailendra Yadav</b>, Founder at Snabay Technologies</p>
                             </div>
-                            <div class="carousel-item">
-                                <div class="img-box">
-                                    <img src={Priya} alt="" />
-
-                                </div>
-                                <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
-                                <p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
-                            </div>
+                            
                             <div class="carousel-item">
                                 <div class="img-box">
                                     <img src={Priyanka} alt="" />
 
                                 </div>
-                                <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
-                                <p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
+                                <p class="testimonial">They are pretty resonable when it comes to creating social media posts. Yes the designers need to be well informed about the idea but over all my experience has been good with them.</p>
+                                <p class="overview"><b>Priyanka Lodha</b>, Founder at Isasakshi</p>
                             </div>
                             <div class="carousel-item">
                                 <div class="img-box">
                                     <img src={Varsha} alt="" />
 
                                 </div>
-                                <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
-                                <p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
+                                <p class="testimonial">A friend recommended me to Skillcoup months back and since then there is no looking back. I have successfully collaborated with you for many projects and the entire process has always been very smooth. Love working with you guys and want to work more. Reviewing because I want others to help themselves and join a place where there is work satisfaction.</p>
+                                <p class="overview"><b>Varsha Yadav</b>, Content Writer</p>
                             </div>
                             <div class="carousel-item">
                                 <div class="img-box">
                                     <img src={Pranya} alt="" />
 
                                 </div>
-                                <p class="testimonial">Phasellus vitae suscipit justo. Mauris pharetra feugiat ante id lacinia. Etiam faucibus mauris id tempor egestas. Duis luctus turpis at accumsan tincidunt. Phasellus risus risus, volutpat vel tellus ac, tincidunt fringilla massa. Etiam hendrerit dolor eget rutrum.</p>
-                                <p class="overview"><b>Michael Holz</b>, Seo Analyst</p>
+                                <p class="testimonial">It was a great experience working with Skillcoup. The clients here are also super freindly.</p>
+                                <p class="overview"><b>Pranav Goel</b>, 3D Animator</p>
                             </div>
                         </div>
                         {/* <!-- Carousel controls --> */}

@@ -28,9 +28,18 @@ const HomeComponent = () => {
                 <span>India Ka Apna Freelancing Platform</span>
               </h3>
               <div className='d-flex content'>
-                <Buttons buttonText={"Get Started"} />
+                <Buttons buttonText={"Get in touch"} />
+              </div>
 
-                <Buttons buttonText={"Explore Work"} outline />
+              <div className="projectcounter" >
+                  
+                            <ul class="intro-stats margin-top-45 hide-under-992px">
+                                <li>
+                                    <div className="counter1"></div><div className="plus"  >+</div>
+                                    <span>Projects Completed</span>
+                                </li>   
+                            </ul>
+                  
               </div>
             </div>
           </div>
@@ -40,13 +49,13 @@ const HomeComponent = () => {
       <Client />
       <Categories />
       <Photosec />
-      <Timeline />
+      {/* <Timeline /> */}
       <div>
         <Blogs />
       </div>
-      <div>
+      {/* <div>
         <VTime />
-      </div>
+      </div> */}
       <Brands />
       <Testimonials />
       <EndSection />

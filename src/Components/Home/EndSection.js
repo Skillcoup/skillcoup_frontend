@@ -20,7 +20,7 @@ const EndSection = () => {
 
                                  <div className="green">
                                  <div className="d-flex content" >
-                                    <Buttons />
+                                    <Buttons buttonText={"Contact Now"}/>
 
 
                                 </div>

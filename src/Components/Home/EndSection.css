@@ -11,6 +11,7 @@
      background-image: url(../../assets/starttodayimg.png); 
     background-repeat: no-repeat;
     background-position: -85px;
+    border-radius: 10px;
 }
 .container-main{
     /* background-color: red; */
