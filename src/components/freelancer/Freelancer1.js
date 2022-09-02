@@ -4,13 +4,13 @@ import {
   MDBCol,
   MDBInput,
   MDBTextArea,
-  MDBBtn,
-  MDBIcon,
 } from "mdb-react-ui-kit";
 import Container from "../container/Container";
 import NextButton from "../button/NextButton";
+import AddButton from "../button/AddButton";
 
-const Freelancer = () => {
+
+const Freelancer1 = () => {
   return (
     <Container>
       <h1 className="text-start">Personal Details</h1>
@@ -99,9 +99,7 @@ const Freelancer = () => {
             </select>
           </MDBCol>
           <MDBCol sm={1}>
-            <MDBBtn outline type="button" size="lg">
-              <MDBIcon fas icon="plus" />
-            </MDBBtn>
+            <AddButton />
           </MDBCol>
         </MDBRow>
         <NextButton onClick={null} />
@@ -110,4 +108,4 @@ const Freelancer = () => {
   );
 };
 
-export default Freelancer;
+export default Freelancer1;
