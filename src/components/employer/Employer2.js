@@ -1,9 +1,66 @@
-import React from "react";
+import React, { useState } from "react";
 import { MDBRow, MDBCol, MDBInput, MDBTextArea } from "mdb-react-ui-kit";
 import Container from "../container/Container";
 import NextButton from "../button/NextButton";
+import axios from "axios";
 
 const Employer2Component = () => {
+  const [about, setAbout] = useState("");
+  const [address, setAddress] = useState("");
+  const [location, setLocation] = useState("");
+  const [pincode, setPincode] = useState("");
+  const [URL, setURL] = useState("");
+  const [organisationType, setOrganisationType] = useState("");
+  const [EmployeeNo, setEmployeeNo] = useState("");
+
+  const aboutChangeHandler = (e) => {
+    setAbout(e.target.value);
+  };
+
+  const addressChangeHandler = (e) => {
+    setAddress(e.target.value);
+  };
+
+  const locationChangeHandler = (e) => {
+    setLocation(e.target.value);
+  };
+
+  const pincodeChangeHandler = (e) => {
+    setPincode(e.target.value);
+  };
+
+  const URLChangeHandler = (e) => {
+    setURL(e.target.value);
+  };
+
+  const organizationChangeHandler = (e) => {
+    setOrganisationType(e.target.value);
+  };
+
+  const employeeChangeHandler = (e) => {
+    setEmployeeNo(e.target.value);
+  };
+
+  const submitHandler = async (e) => {
+    e.preventDefault();
+    axios
+      .post("http://localhost:5000/api/employer/2", {
+        about: about,
+        address: address,
+        location: location,
+        pincode: pincode,
+        businessURL: URL,
+        organisationType: organisationType,
+        noOfEmployees: EmployeeNo,
+      })
+      .then((response) => {
+        console.log(response);
+        alert("form submitted");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
   return (
     <Container>
       <h1 className="text-start">About Organisation</h1>
@@ -12,7 +69,7 @@ const Employer2Component = () => {
         about your organisation.
       </h2>
       <hr />
-      <form>
+      <form onSubmit={submitHandler}>
         <MDBRow className="mb-4">
           <MDBCol lg="4" className="d-flex align-items-center mb-2 mb-lg-0">
             <label for="about">
@@ -26,6 +83,7 @@ const Employer2Component = () => {
               name="about"
               rows={4}
               required
+              onChange={aboutChangeHandler}
             />
           </MDBCol>
         </MDBRow>
@@ -42,6 +100,7 @@ const Employer2Component = () => {
               name="address"
               rows={3}
               required
+              onChange={addressChangeHandler}
             />
           </MDBCol>
           <MDBCol lg="4"></MDBCol>
@@ -52,6 +111,7 @@ const Employer2Component = () => {
               name="address"
               size="lg"
               required
+              onChange={locationChangeHandler}
             />
           </MDBCol>
           <MDBCol lg="4" className="mb-3 md-lg-0">
@@ -61,6 +121,7 @@ const Employer2Component = () => {
               name="address"
               size="lg"
               required
+              onChange={pincodeChangeHandler}
             />
           </MDBCol>
         </MDBRow>
@@ -78,6 +139,7 @@ const Employer2Component = () => {
               size="lg"
               label="Enter your business website URL here"
               required
+              onChange={URLChangeHandler}
             />
           </MDBCol>
         </MDBRow>
@@ -86,7 +148,12 @@ const Employer2Component = () => {
             <label for="type">Type</label>
           </MDBCol>
           <MDBCol lg="4" className="mb-3 md-lg-0">
-            <select name="type" id="type" class="form-control form-control-lg">
+            <select
+              name="type"
+              id="type"
+              class="form-control form-control-lg"
+              onChange={organizationChangeHandler}
+            >
               <option value="Organisation Type" selected>
                 Organisation Type
               </option>
@@ -103,6 +170,7 @@ const Employer2Component = () => {
               name="type"
               id="number"
               class="form-control form-control-lg"
+              onChange={employeeChangeHandler}
             >
               <option value="No. of Employees" selected>
                 No. of Employees

@@ -25,6 +25,19 @@ h2 {
   color: #000000;
 }
 
+h3,
+h4 {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #000000;
+}
+
+h5 {
+  color: #B4B4B4;
+  font-size: 0.95rem;
+}
+
 hr {
   border-top: 1.5px solid #18a0fb;
   border-bottom: none;

@@ -2,9 +2,9 @@ import React from "react";
 import { MDBBtn } from "mdb-react-ui-kit";
 import classes from "./NextButton.module.css";
 
-const NextButton = (props) => {
+const NextButton = () => {
   return (
-    <MDBBtn className={classes.button} onClick={props.onClick} type="submit">
+    <MDBBtn className={classes.button} type="submit">
       Next
     </MDBBtn>
   );

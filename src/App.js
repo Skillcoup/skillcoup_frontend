@@ -8,6 +8,7 @@ import Freelancer2 from "./pages/Freelancer2";
 import Employer1 from "./pages/Employer1.jsx";
 import Employer2 from "./pages/Employer2";
 import Home from "./pages/Home.jsx";
+import Accounts from "./components/accounts/Accounts";
 function App() {
   return (
     <div className="App">
@@ -19,6 +20,7 @@ function App() {
         <Route path="/freelancer2" element={<Freelancer2 />} />
         <Route path="/employer1" element={<Employer1 />} />
         <Route path="/employer2" element={<Employer2 />} />
+        <Route path="/accounts" element={<Accounts />} />
       </Routes>
       <Footer />
     </div>

@@ -1,0 +1,6 @@
+.accountButton,
+.accountButton:hover,
+.accountButton:active,
+.accountButton:focus {
+  background-color: #afafaf;
+}

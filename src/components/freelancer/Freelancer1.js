@@ -1,16 +1,47 @@
-import React from "react";
-import {
-  MDBRow,
-  MDBCol,
-  MDBInput,
-  MDBTextArea,
-} from "mdb-react-ui-kit";
+import React, { useState } from "react";
+import { MDBRow, MDBCol, MDBInput, MDBTextArea } from "mdb-react-ui-kit";
 import Container from "../container/Container";
 import NextButton from "../button/NextButton";
 import AddButton from "../button/AddButton";
 
-
 const Freelancer1 = () => {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [description, setDescription] = useState("");
+  const [languageValue, setLanguageValue] = useState([
+    { language: "", level: "" },
+  ]);
+
+  const addLanguageHandler = () => {
+    return `MDBCol lg="4" className="mb-3 md-lg-0">
+            <MDBInput
+              type="text"
+              name="language"
+              id="language"
+              size="lg"
+              label="Language"
+            />
+          </MDBCol>
+          <MDBCol lg="3" sm={11} size="12" className="mb-3 md-lg-0">
+            <select
+              name="language"
+              id="language"
+              class="form-control form-control-lg"
+              required
+            >
+              <option value="Beginner">Beginner</option>
+              <option value="Intermediate">Intermediate</option>
+              <option value="Expert">Expert</option>
+            </select>
+          </MDBCol>`;
+  };
+  const submitHandler = (e) => {
+    e.preventDefault();
+    fetch("http://localhost:5000/api/freelancer/1", {
+      method: "POST",
+      body: {},
+    });
+  };
   return (
     <Container>
       <h1 className="text-start">Personal Details</h1>
@@ -20,7 +51,7 @@ const Freelancer1 = () => {
         your better.
       </h2>
       <hr />
-      <form>
+      <form onSubmit={submitHandler}>
         <MDBRow className="mb-4">
           <MDBCol lg="4" className="d-flex align-items-center mb-2 mb-lg-0">
             <label for="name">
@@ -31,7 +62,7 @@ const Freelancer1 = () => {
             <MDBInput
               type="text"
               name="name"
-              id="name"
+              id="firstName"
               size="lg"
               label="First Name"
             />
@@ -40,7 +71,7 @@ const Freelancer1 = () => {
             <MDBInput
               type="text"
               name="name"
-              id="name"
+              id="lastName"
               size="lg"
               label="Last Name"
             />
@@ -99,7 +130,7 @@ const Freelancer1 = () => {
             </select>
           </MDBCol>
           <MDBCol sm={1}>
-            <AddButton />
+            <AddButton onClick={null} />
           </MDBCol>
         </MDBRow>
         <NextButton onClick={null} />

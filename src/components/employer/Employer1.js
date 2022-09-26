@@ -1,9 +1,55 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "../container/Container";
 import { MDBRow, MDBCol, MDBInput } from "mdb-react-ui-kit";
 import NextButton from "../button/NextButton";
+import axios from "axios";
 
 const Employer1Component = () => {
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [organisationName, setOrganisationName] = useState("");
+  const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
+
+  const firstNameHandler = (e) => {
+    setFirstName(e.target.value);
+  };
+
+  const lastNameHandler = (e) => {
+    setLastName(e.target.value);
+  };
+
+  const organizationChangeHandler = (e) => {
+    setOrganisationName(e.target.value);
+  };
+
+  const emailChangeHandler = (e) => {
+    setEmail(e.target.value);
+  };
+
+  const phoneChangeHandler = (e) => {
+    setPhone(e.target.value);
+  };
+
+  const submitHandler = async (e) => {
+    e.preventDefault();
+    axios
+      .post("http://localhost:5000/api/employer/1", {
+        firstName: firstName,
+        lastName: lastName,
+        email: email,
+        phone: phone,
+        organisation: organisationName,
+      })
+      .then((response) => {
+        console.log(response);
+        alert("Successful");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+
   return (
     <Container>
       <h1 className="text-start">Organisation Details</h1>
@@ -13,7 +59,7 @@ const Employer1Component = () => {
         your better.
       </h2>
       <hr />
-      <form>
+      <form onSubmit={submitHandler}>
         <MDBRow className="mb-4">
           <MDBCol lg="4" className="d-flex align-items-center mb-2 mb-lg-0">
             <label for="name">
@@ -24,20 +70,22 @@ const Employer1Component = () => {
             <MDBInput
               type="text"
               name="name"
-              id="name"
+              id="first_name"
               size="lg"
               label="First Name"
               required
+              onChange={firstNameHandler}
             />
           </MDBCol>
           <MDBCol lg="4" className="mb-3 md-lg-0">
             <MDBInput
               type="text"
               name="name"
-              id="name"
+              id="last_name"
               size="lg"
               label="Last Name"
               required
+              onChange={lastNameHandler}
             />
           </MDBCol>
         </MDBRow>
@@ -55,6 +103,7 @@ const Employer1Component = () => {
               label="Organisation Name"
               size="lg"
               required
+              onChange={organizationChangeHandler}
             />
           </MDBCol>
         </MDBRow>
@@ -72,6 +121,7 @@ const Employer1Component = () => {
               label="test@example.com"
               size="lg"
               required
+              onChange={emailChangeHandler}
             />
           </MDBCol>
         </MDBRow>
@@ -89,6 +139,7 @@ const Employer1Component = () => {
               size="lg"
               label="Phone Number"
               required
+              onChange={phoneChangeHandler}
             />
           </MDBCol>
         </MDBRow>
@@ -102,7 +153,7 @@ const Employer1Component = () => {
             <MDBInput type="file" name="logo" id="logo" size="lg" required />
           </MDBCol>
         </MDBRow>
-        <NextButton onClick={null} />
+        <NextButton />
       </form>
     </Container>
   );
