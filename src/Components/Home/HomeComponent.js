@@ -22,7 +22,7 @@ const HomeComponent = () => {
           <div className='left'>
             <div className='content-container'>
               <h3>
-                <strong>Get Best Freelancers </strong>
+                <strong>Get Best Talent </strong>
                 <strong>At The Best Price</strong>
                 {/* <br /> */}
                 <span>India Ka Apna Freelancing Platform</span>
