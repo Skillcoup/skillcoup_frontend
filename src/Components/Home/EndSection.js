@@ -14,8 +14,8 @@ const EndSection = () => {
 
                               <div className="typerwriter-overlay">
                                 <p>
-                                    <h3 className="margin-top-25">Aim for excellence with </h3>
-                                    <h3 className="margin-top-25">best talent at Skillcoup.</h3>
+                                    <h3 className="margin-top-25">Get Hired, or Hire Talent </h3>
+                                    <h3 className="margin-top-25">At no extra commission.</h3>
                                 </p> 
 
                                  <div className="green">

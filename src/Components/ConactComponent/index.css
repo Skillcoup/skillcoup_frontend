@@ -43,7 +43,7 @@
     height: 2px;
     background: #18A0FB;
     display: block;
-    left: 45%;
+    /* left: 45%; */
     position: absolute;
     bottom: -25%;
   }

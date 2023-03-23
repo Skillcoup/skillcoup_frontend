@@ -25,7 +25,7 @@ const ContactComponent = () => {
           <div className=" col-xl-8 col-lg-8">
             <section id='contact' >
               <div className='section-headline' >
-                <h3 className='page-heading'>Contact Us </h3>
+                <h3 className='page-heading text-center'>Contact Us </h3>
               </div>
               <br /><br />
 
@@ -55,7 +55,8 @@ const ContactComponent = () => {
                 </div>
 
                 <div>
-                  <textarea class="with-border" name="comments" cols="40" rows="5" id="comments" placeholder="Explain in detail" spellcheck="true" required="required"></textarea>
+                  <textarea class="with-border" name="comments" cols="40" rows="5" id="comments" placeholder="Submit your requirements in details
+" spellcheck="true" required="required"></textarea>
                 </div>
 
                 <div className='submit-form'>
@@ -219,7 +220,7 @@ const ContactComponent = () => {
               </div>
             </div>
         </div> */}
-        <Footer />
+      <Footer />
     </>
   )
 }
