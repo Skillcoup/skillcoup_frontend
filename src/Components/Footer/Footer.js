@@ -17,41 +17,41 @@ const Footer = () => {
             <MDBCol md="3" lg="4" xl="3" className="mx-auto mb-4">
               <h6 className="fw-bold mb-3">We Serve For</h6>
               <p className="mb-2">
-                <a href="#" className="text-reset">
+             
                   Design
-                </a>
+               
               </p>
               <p className="mb-2">
-                <a href="#" className="text-reset">
+                
                   Digital Marketing
-                </a>
+               
               </p>
               <p className="mb-2">
-                <a href="#" className="text-reset">
+              
                   Writing and Translation
-                </a>
+              
               </p>
               <p className="mb-2">
-                <a href="#" className="text-reset">
+             
                   Photography
-                </a>
+                
               </p>
               <p className="mb-2">
-                <a href="#" className="text-reset">
+        
                   Music and Audio
-                </a>
+              
               </p>
               <p className="mb-2">
-                <a href="#" className="text-reset">
+                {/* <a href="#" className="text-reset"> */}
                   Video and Animation
-                </a>
+                {/* </a> */}
               </p>
             </MDBCol>
             <MDBCol md="2" lg="2" xl="2" className="mx-auto mb-4">
               <h6 className="fw-bold mb-3">Company</h6>
               <p className="mb-2">
                 <a href="https://skillcoup.com/about-us" className="text-reset">
-                  Team
+                  About Us
                 </a>
               </p>
               {/* <p className="mb-2">
@@ -76,7 +76,7 @@ const Footer = () => {
               </p> */}
             </MDBCol>
             <MDBCol md="3" lg="2" xl="2" className="mx-auto mb-4">
-              <h6 className="text-uppercase fw-bold mb-3">My Account (Coming Soon!)</h6>
+              <h6 className="text-uppercase fw-bold mb-3">Follow Us</h6>
               {/* <p className="mb-2">
                 <a href="#!" className="text-reset">
                   Login 
@@ -87,20 +87,23 @@ const Footer = () => {
                   My Account
                 </a>
               </p> */}
-              <p>Follow Us</p>
+              {/* <p>Follow Us</p> */}
               <MDBRow>
                 <MDBCol>
                   <a href="#" className="me-4 text-reset">
-                    <MDBIcon fab icon="instagram" />
+                  <img src="/images/facebook.svg" alt="Facebook Icon" />
                   </a>
                   <a href="#" className="me-4 text-reset">
-                    <MDBIcon fab icon="facebook-f" />
+             
+                    <img src="/images/instagram.svg" alt="Facebook Icon" />
                   </a>
                   <a href="#" className="me-4 text-reset">
-                    <MDBIcon fab icon="linkedin" />
+                
+                    <img src="/images/linkedin.svg" alt="Facebook Icon" />
                   </a>
                   <a href="#" className="me-4 text-reset">
-                    <MDBIcon fab icon="twitter" />
+     
+                    <img src="/images/twitter.svg" alt="Facebook Icon" />
                   </a>
                 </MDBCol>
               </MDBRow>
@@ -130,9 +133,9 @@ const Footer = () => {
         style={{ backgroundColor: "rgba(0, 0, 0, 0.05)" }}
       >
         © 2022&nbsp;
-        <a className="text-reset fw-bold" href="https://mdbootstrap.com/">
+        {/* <a className="text-reset fw-bold" href="https://skillcoup.com/"> */}
           Skillcoup&nbsp;
-        </a>
+        {/* </a> */}
         All Rights Reserved.
       </div>
     </MDBFooter>

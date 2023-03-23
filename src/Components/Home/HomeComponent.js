@@ -25,7 +25,7 @@ const HomeComponent = () => {
                 <strong>Get Best Talent </strong>
                 <strong>At The Best Price</strong>
                 {/* <br /> */}
-                <span>India Ka Apna Freelancing Platform</span>
+                <span>India ka apna earning platform</span>
               </h3>
               <div className='d-flex content'>
                 <Buttons buttonText={"Get in touch"} />
