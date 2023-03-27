@@ -2,7 +2,7 @@
 
 import React from "react";
 import { classNames } from "../../lib/class-names";
-import "./Hero.css";
+import "./Commoncss.css";
 
 const Buttons = ({ buttonText, outline }) => {
   return (
