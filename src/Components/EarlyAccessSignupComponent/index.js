@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react";
 
 import "./index.css";
 
@@ -6,7 +7,24 @@ import EarlyAccessNavbar from "../EarlyAccessNavbar";
 import EarlyAccessFooter from "../EarlyAccessFooter";
 import StayUpdatedComponent from "../StayUpdatedComponent";
 
+
+
+const list = [
+  "Design",
+  "Writing & Translation",
+  "Video & Animation",
+  "Web & App Development",
+  "Digital Marketing",
+  "Music & Audio"
+]
+
 const EarlyAccessSignupComponent = () => {
+  const [name, setName] = useState("");
+const [email, setEmail] = useState("");
+const [mobile, setMobile] = useState("");
+const [role, setRole] = useState("");
+const [work, setWork] = useState(false);
+const [hire, setHire] = useState(false);
   return (
     <>
     <div className="p-1" style={{
@@ -28,8 +46,43 @@ const EarlyAccessSignupComponent = () => {
 
       {/* Two Buttons in a Row */}
       <div className="row" style={{ justifyContent: "center" }}>
-        <button className="btn">Want to Hire</button>
-        <button className="btn">Want to Work</button>
+        <button className="btn" id="Hire_btn"
+        onClick={(e) => {
+          if(hire)
+          {
+            setHire(false);
+            e.target.classList.remove("btn-active");
+            e.target.classList.add("btn");
+          }
+          else{
+            setHire(true);
+            setWork(false);
+            e.target.classList.add("btn-active");
+            e.target.classList.remove("btn");
+            document.getElementById("Work_btn").classList.remove("btn-active");
+            document.getElementById("Work_btn").classList.add("btn");
+          }
+        }}
+
+        >Want to Hire</button>
+        <button className="btn" id="Work_btn"
+        onClick={(e)=>{
+          if(work)
+          {
+            setWork(false);
+            e.target.classList.remove("btn-active");
+            e.target.classList.add("btn");
+          }
+          else{
+            setWork(true);
+            setHire(false);
+            e.target.classList.add("btn-active");
+            e.target.classList.remove("btn");
+            document.getElementById("Hire_btn").classList.remove("btn-active");
+            document.getElementById("Hire_btn").classList.add("btn");
+          }
+        }}
+        >Want to Work</button>
       </div>
 
       {/* Form Starts */}
@@ -41,33 +94,75 @@ const EarlyAccessSignupComponent = () => {
           className="input-outlined"
           type="text"
           placeholder="Enter Your Full Name"
+          onChange={(e) => {
+            if(e.target.value !== ""){
+            setName(e.target.value);
+            e.target.classList.add("input-outlined");
+          }
+            else{e.target.classList.add("input-outlined-error");
+            e.target.classList.remove("input-outlined");} 
+          }}
         />
         <input
           className="input-outlined"
           type="text"
           placeholder="Enter your email address"
+          onChange={(e) => {
+            if(e.target.value !== ""){
+            setEmail(e.target.value);
+            e.target.classList.add("input-outlined");
+          }
+            else{e.target.classList.add("input-outlined-error");
+            e.target.classList.remove("input-outlined");}
+          }}
         />
         <input
           className="input-outlined"
           type="text"
           placeholder="Enter mobile number"
+          onChange={(e) => {
+            if(e.target.value !== ""){
+            setMobile(e.target.value);
+            e.target.classList.add("input-outlined");
+          }
+            else{e.target.classList.add("input-outlined-error");
+            e.target.classList.remove("input-outlined");}
+          }}
         />
         <select
           className="select-outlined"
-          // Options A B C
-
+          // Hide if work is false
+          style={{ visibility: work ? "visible" : "collapse" }}
           defaultValue={"1"}
+          onChange={(e) => {
+            if(e.target.value !== "1"){
+              setRole(e.target.value);
+            }
+          }}
         >
           <option value="1" disabled>
             Select your role
           </option>
-          <option value="2">Option A</option>
-          <option value="3">Option B</option>
-          <option value="4">Option C</option>
+          {
+            // Iterate list
+            list.map((item, index) => {
+              return <option value={item}>{item}</option>
+            })
+          }
         </select>
       </div>
       <div style={{ justifyContent: "center", display: "flex" }}>
-        <button className="btn-early-access ps-5 pe-5 pt-3 pb-2 mt-2 mb-1">
+        <button className="btn-early-access ps-5 pe-5 pt-3 pb-2 mt-2 mb-1"
+        onClick={()=>{
+          var data = {
+            name: name,
+            email: email,
+            mobile: mobile,
+            role: role,
+            hireOrWork: hire ? "Hire" : "Work"
+          };
+        }}
+        >
           <h4>Submit</h4>
         </button>
       </div>
