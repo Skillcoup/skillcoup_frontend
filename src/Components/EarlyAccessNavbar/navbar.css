@@ -1,0 +1,47 @@
+.navbar-logo{
+    width: 128px;
+
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+     /* Make This div not to take entire row just a left space of navbar*/
+    justify-self: flex-start;
+    align-self: flex-start;
+
+    /* Make This div not to take entire row just a left space of navbar*/
+}
+.logo{
+    height: 100%;
+    width: 100%;
+    margin:20px;
+    justify-self: fit-content;
+    align-self: center;
+}
+.navbar{
+    background-color: white;
+    display: flex;
+
+}
+.navbar-button{
+    background-color: #00000000;
+    color: #072756;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: 'Poppins';
+    font-weight: bolder;
+    cursor: pointer;
+    margin: 08px;
+}
+.active-button{
+    background-color: #00000000;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-family: 'Poppins';
+    font-weight: bolder;
+    cursor: pointer;
+    margin: 08px;
+    color: #35CDFF;
+}

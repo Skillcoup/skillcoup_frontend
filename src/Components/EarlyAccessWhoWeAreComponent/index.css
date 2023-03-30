@@ -395,6 +395,8 @@ textarea {
   top: 600px;
 }
 
+
+
 /* style={{
   background:
     "linear-gradient(115.79deg, #35CDFF 33.71%, #072756 134.59%)",
@@ -505,31 +507,6 @@ color: #FFFFFF;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
-
-.btn {
-  border: 3px solid #35cdff;
-  box-shadow: 0px 0px 33px #d9e2ef;
-  border-radius: 48px;
-  color: #35cdff;
-  /* Width Max TO fit content */
-  max-width: fit-content;
-  font-family: "Poppins";
-  font-style: normal;
-  padding: 0.5rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin: 0.5rem;
-}
-
-/* on btn hover */
-.btn:hover {
-  background: linear-gradient(180deg, #35cdff 0%, #072756 210.82%);
-  font-family: "Poppins";
-  font-style: normal;
-  color: #fff;
-  box-shadow: 0px 0px 33px 10px #d9e2ef;
-  border-radius: 48px;
-}
 /* override card-text in card-text-new*/
 .card-text-new{
   color:#FFFFFF;
@@ -545,7 +522,7 @@ font-weight: 600;
 }
 .tick-cards{
 background: #FFFFFF;
-box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.19);
+box-shadow: 0px 6px 14px rgba(0, 0, 0, 0.17);
 border-radius: 100px;
 min-width:50%;
 max-width: 80%;
@@ -567,4 +544,69 @@ font-style: normal;
 font-weight: 800;
 font-size: 1.35rem;
 color: #35CDFF;
+}
+.who-we-are-title{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+color: #072756;
+font-size: 5vw;
+}
+.header{
+font-family: 'Poppins';
+font-style: normal;
+font-weight: 700;
+font-size: 3vw;
+text-align: center;
+color: #072756;
+}
+.text-contnt{
+  font-family: 'Poppins';
+font-style: normal;
+font-weight: 400;
+font-size: 1.5vw;
+text-align: center;
+letter-spacing: 0.01em;
+color: #0B264E;
+margin-left: 10vw;
+margin-right: 10vw;
+margin-bottom:10vh;
+margin-top:10vh;
+}
+
+.btn-early-access{
+background: linear-gradient(132.67deg, #35CDFF 26.02%, #0B264E 184.97%);
+box-shadow: 0px 0px 28.2371px 8.5567px #D9E2EF;
+border-radius: 48px;
+font-size: 1.5vw;
+color: white;
+max-width: fit-content;
+font-family: "Poppins";
+font-style: normal;
+padding: 0.5rem;
+padding-left: 1rem;
+padding-right: 1rem;
+margin: 0.5rem;
+border-color: #D9E2EF;
+}
+
+.blog-card{
+  background: #FFFFFF;
+box-shadow: 0px 7.53375px 20.9271px rgba(0, 0, 0, 0.25);
+border-radius: 8.37083px;
+max-width: 20vw;
+}
+
+.blog-card-content{
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 0.75rem;
+
+  /* or 26px */
+  
+  text-align: center;
+  text-transform: capitalize;
+  
+  color: #000000;
 }

@@ -2,9 +2,20 @@ import React from "react";
 
 import "./index.css";
 
+import EarlyAccessNavbar from "../EarlyAccessNavbar";
+import EarlyAccessFooter from "../EarlyAccessFooter";
+import StayUpdatedComponent from "../StayUpdatedComponent";
+
 const EarlyAccessSignupComponent = () => {
   return (
     <>
+    <div className="p-1" style={{
+      width: "100vw",
+      backgroundColor: "#072756"
+    }}>
+     <p className="card-header-new pt-2"> Our alpha launch date will be revealed soon!</p>
+    </div>
+    <EarlyAccessNavbar index={2} />
       <div>
         <div className="content-container m-5">
           <h3 style={{ textAlign: "center" }}>
@@ -56,7 +67,7 @@ const EarlyAccessSignupComponent = () => {
         </select>
       </div>
       <div style={{ justifyContent: "center", display: "flex" }}>
-        <button className="btn ps-5 pe-5 pt-3 pb-2 mt-2 mb-1">
+        <button className="btn-early-access ps-5 pe-5 pt-3 pb-2 mt-2 mb-1">
           <h4>Submit</h4>
         </button>
       </div>
@@ -242,8 +253,10 @@ const EarlyAccessSignupComponent = () => {
         </h3>
       </div>
       <div className="justify-content-center flex-on">
-      <button className="btn"><h4>Get Early Access</h4></button>
+      <button className="btn-early-access"><h4>Get Early Access</h4></button>
       </div>
+      <StayUpdatedComponent /> 
+      <EarlyAccessFooter />
     </>
   );
 };
