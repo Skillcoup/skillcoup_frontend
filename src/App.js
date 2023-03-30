@@ -6,15 +6,18 @@ import { Routes, Route } from "react-router-dom";
 import Home from "./Pages/HomePage";
 import Contact from "./Pages/ContactPage";
 import AboutPage from "./Pages/AboutPage";
+import EarlyAccessHomePage from "./Pages/EarlyAccessHomePage";
 
 
 function App() {
+  let isEarlyAccessLive = true;
   return (
     <div className='App'>
       <Routes>
-        <Route path='/' element={<Home />} />
+        {!isEarlyAccessLive && (<Route path='/' element={<Home />} />)}
+        {isEarlyAccessLive && (<Route path='/' element={<EarlyAccessHomePage />} />)}
         <Route path='/contact' element={<Contact />} />
-        <Route path="/about-us" element = {<AboutPage />} />
+        <Route path="/about-us" element={<AboutPage />} />
       </Routes>
     </div>
   );

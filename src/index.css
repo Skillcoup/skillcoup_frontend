@@ -1,0 +1,65 @@
+/** @format */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.bg-skillcoup-gradient {
+  background: linear-gradient(180deg, #35cdff 0%, #072756 210.82%);
+}
+
+.bg-skillcoup-gradient-text{
+  background : linear-gradient(180deg, #35cdff 0%, #072756 210.82%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skillcoup-header-dark-color{
+  color: #072756;
+}
+
+.global-btn-small {
+  border: 3px solid #35cdff;
+  box-shadow: 0px 0px 33px #d9e2ef;
+  border-radius: 48px;
+  color: #35cdff;
+  max-width: fit-content;
+  font-family: "Poppins";
+  font-style: normal;
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  
+}
+
+.global-btn-small:hover {
+  background: linear-gradient(180deg, #35cdff 0%, #072756 210.82%);
+  font-family: "Poppins";
+  font-style: normal;
+  color: #fff;
+  box-shadow: 0px 0px 33px 10px #d9e2ef;
+  border-radius: 48px;
+}
+
+.global-btn-large {
+  border: 3px solid #35cdff;
+  box-shadow: 0px 0px 33px #d9e2ef;
+  border-radius: 48px;
+  color: #35cdff;
+  max-width: fit-content;
+  font-family: "Poppins";
+  font-style: normal;
+  padding: 0.75rem;
+  padding-left: 4.5rem;
+  padding-right: 4.5rem;
+  
+}
+
+.global-btn-large:hover {
+  background: linear-gradient(180deg, #35cdff 0%, #072756 210.82%);
+  font-family: "Poppins";
+  font-style: normal;
+  color: #fff;
+  box-shadow: 0px 0px 33px 10px #d9e2ef;
+  border-radius: 48px;
+}
