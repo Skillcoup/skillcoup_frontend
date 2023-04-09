@@ -3,7 +3,7 @@ import React from "react";
 
 import "./footer.css";
 
-const Footer = () => {
+const EarlyAccessFooter = () => {
   return (
     <>
     <div className="p-1" style={{
@@ -23,4 +23,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+export default EarlyAccessFooter;

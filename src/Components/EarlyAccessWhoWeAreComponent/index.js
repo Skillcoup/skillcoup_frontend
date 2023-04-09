@@ -5,58 +5,25 @@ import "./index.css";
 import EarlyAccessNavbar from "../EarlyAccessNavbar";
 import EarlyAccessFooter from "../EarlyAccessFooter";
 import StayUpdatedComponent from "../StayUpdatedComponent";
+import { useNavigate } from "react-router";
+
 
 const EarlyAccesswhoWeAreComponent = () => {
+  const navigate = useNavigate();
   return (
     <>
-      <div
-        className="p-1"
-        style={{
-          width: "100vw",
-          backgroundColor: "#072756",
-        }}
-      >
-        <p className="card-header-new pt-2">
-          {" "}
-          Our alpha launch date will be revealed soon!
-        </p>
-      </div>
       <EarlyAccessNavbar index={2} />
-      <div
-        className="row"
-        style={{
-          justifyContent: "space-evenly",
-          width: "100vw",
-        }}
-      >
-        <div
-          className="who-we-are-title"
-          style={{
-            maxWidth: "60vw",
-            marginTop: "10%",
-          }}
-        >
-          Platform for
-          <br />
-          Creativity & Work
-          <br />
-          <button className="btn-early-access">Get Early Access</button>
+      <div className='flex flex-row justify-between  bg-skillcoup-graident'>
+        {/* left side div */}
+        <div className='flex flex-col justify-center ml-20'>
+          <div className='flex flex-row'>
+            <h2 className='font-bold text-6xl'>Platform for</h2>
+          </div>
+          <h2 className='font-bold text-6xl'>Creativity & Work</h2>
+          <button className='mt-3 ml-3 global-btn-large' onClick={()=>{navigate("/early-access")}}>Get Early Access</button>
         </div>
-        <div
-          className="who-we-are-title"
-          style={{
-            width: "40vw",
-            marginTop: "2.5%",
-          }}
-        >
-          <img
-            src="https://res.cloudinary.com/skillcoup/image/upload/v1680193825/EarlyAccessWhoWeAre/who-we-are_rexlkl.png"
-            style={{
-              width: "100%",
-            }}
-            alt="who we are"
-            className="who-we-are-image"
-          />
+        <div className='flex mt-10 mr-16 justify-end'>
+          <img src="https://res.cloudinary.com/skillcoup/image/upload/v1680193825/EarlyAccessWhoWeAre/who-we-are_rexlkl.png" height="80%" width="80%" />
         </div>
       </div>
 
@@ -120,7 +87,7 @@ const EarlyAccesswhoWeAreComponent = () => {
         <button className="btn-early-access">Get Early Access</button>
       </div>
 
-      <div className="row header" style={{ justifyContent: "center", marginTop:"5%"}}>
+      <div className="row header" style={{ justifyContent: "center", marginTop: "5%" }}>
         Blogs For You
       </div>
       <div className="row mb-5" style={{
@@ -128,7 +95,7 @@ const EarlyAccesswhoWeAreComponent = () => {
         maxWidth: "100vw",
         width: "fit-content",
         minWidth: "70vw",
-        margin:"auto",
+        margin: "auto",
         display: "flex",
       }}>
         <div className="blog-card">
@@ -141,10 +108,10 @@ const EarlyAccesswhoWeAreComponent = () => {
             className="mt-3"
           />
           <div className="blog-card-content mt-2 mb-2">
-          We are very well aware of the reasons that professionals have to go for Freelancing, but today we will discuss why hiring freelancers is an attractive option for clients and business owners.
-            </div>  
+            We are very well aware of the reasons that professionals have to go for Freelancing, but today we will discuss why hiring freelancers is an attractive option for clients and business owners.
+          </div>
         </div>
-                <div className="blog-card">
+        <div className="blog-card">
           <img
             src="https://res.cloudinary.com/skillcoup/image/upload/v1680195221/EarlyAccessWhoWeAre/blog2_1_w3byn8.png"
             style={{
@@ -154,8 +121,8 @@ const EarlyAccesswhoWeAreComponent = () => {
             className="mt-3"
           />
           <div className="blog-card-content mt-2 mb-2">
-          We are very well aware of the reasons that professionals have to go for Freelancing, but today we will discuss why hiring freelancers is an attractive option for clients and business owners.
-            </div>  
+            We are very well aware of the reasons that professionals have to go for Freelancing, but today we will discuss why hiring freelancers is an attractive option for clients and business owners.
+          </div>
         </div>
         <div className="blog-card">
           <img
@@ -167,11 +134,11 @@ const EarlyAccesswhoWeAreComponent = () => {
             className="mt-3"
           />
           <div className="blog-card-content mt-2 mb-2">
-          We are very well aware of the reasons that professionals have to go for Freelancing, but today we will discuss why hiring freelancers is an attractive option for clients and business owners.
-            </div>  
+            We are very well aware of the reasons that professionals have to go for Freelancing, but today we will discuss why hiring freelancers is an attractive option for clients and business owners.
+          </div>
         </div>
       </div>
-          
+
       <div className="row" style={{
         display: "flex",
         justifyContent: "space-around",
@@ -184,41 +151,41 @@ const EarlyAccesswhoWeAreComponent = () => {
           maxWidth: "20vw",
         }}>
           <img
-          src='https://res.cloudinary.com/skillcoup/image/upload/v1680197176/EarlyAccessWhoWeAre/Icon_aqir0y.svg'
-          alt="icon"
+            src='https://res.cloudinary.com/skillcoup/image/upload/v1680197176/EarlyAccessWhoWeAre/Icon_aqir0y.svg'
+            alt="icon"
           />
           <text>{"  Safe Payment"}</text>
         </div >
         <div style={{
           maxWidth: "20vw",
         }}>
-        <img
-          src='https://res.cloudinary.com/skillcoup/image/upload/v1680197176/EarlyAccessWhoWeAre/Icon_aqir0y.svg'
-          alt="icon"
+          <img
+            src='https://res.cloudinary.com/skillcoup/image/upload/v1680197176/EarlyAccessWhoWeAre/Icon_aqir0y.svg'
+            alt="icon"
           />
           <text>{"  Plenty of Opportunities"}</text>
         </div>
         <div style={{
           maxWidth: "20vw",
         }}>
-        <img
-          src='https://res.cloudinary.com/skillcoup/image/upload/v1680197176/EarlyAccessWhoWeAre/Icon_aqir0y.svg'
-          alt="icon"
+          <img
+            src='https://res.cloudinary.com/skillcoup/image/upload/v1680197176/EarlyAccessWhoWeAre/Icon_aqir0y.svg'
+            alt="icon"
           />
           <text>{"  Verified Profiles"}</text>
         </div>
         <div style={{
           maxWidth: "20vw",
         }}>
-        <img
-          src='https://res.cloudinary.com/skillcoup/image/upload/v1680197176/EarlyAccessWhoWeAre/Icon_aqir0y.svg'
-          alt="icon"
+          <img
+            src='https://res.cloudinary.com/skillcoup/image/upload/v1680197176/EarlyAccessWhoWeAre/Icon_aqir0y.svg'
+            alt="icon"
           />
           <text>{"  Protected Data"}</text>
         </div>
       </div>
 
-      <StayUpdatedComponent /> 
+      <StayUpdatedComponent />
       <EarlyAccessFooter />
     </>
   );

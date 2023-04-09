@@ -15,18 +15,23 @@ import EarlyAccessHomePage from "./Pages/EarlyAccessHomePage";
 
 
 function App() {
-  let isEarlyAccessLive = true;
+  let isEarlyAccessLive = process.env.REACT_APP_EARLY_ACCESS;
   return (
     <div className='App'>
-      <Routes>
-        {!isEarlyAccessLive && (<Route path='/' element={<Home />} />)}
-        {isEarlyAccessLive && (<Route path='/' element={<EarlyAccessHomePage />} />)}
+      {!isEarlyAccessLive && (<Routes>
+        <Route path='/' element={<Home />} />
         <Route path='/contact' element={<Contact />} />
-        <Route path="/about-us" element = {<AboutPage />} />
-        <Route path="/early-access-signup" element = {<EarlyAccessSignup />} />
-        <Route path="/early-access-who-we-are" element = {<EarlyAccesswhoWeAre />} />
+        <Route path="/about-us" element={<AboutPage />} />
 
-      </Routes>
+      </Routes>)}
+      {isEarlyAccessLive && (
+        <Routes>
+          <Route path='/' element={<EarlyAccessHomePage />} />
+          <Route path="/early-access" element={<EarlyAccessSignup />} />
+          <Route path="/who-we-are" element={<EarlyAccesswhoWeAre />} />
+        </Routes>
+
+      )}
     </div>
   );
 }

@@ -6,6 +6,7 @@ import "./index.css";
 import EarlyAccessNavbar from "../EarlyAccessNavbar";
 import EarlyAccessFooter from "../EarlyAccessFooter";
 import StayUpdatedComponent from "../StayUpdatedComponent";
+import { sendEarlyAccessDataToBackend } from "../../Service/earlyAcess.service";
 
 
 
@@ -20,20 +21,46 @@ const list = [
 
 const EarlyAccessSignupComponent = () => {
   const [name, setName] = useState("");
-const [email, setEmail] = useState("");
-const [mobile, setMobile] = useState("");
-const [role, setRole] = useState("");
-const [work, setWork] = useState(false);
-const [hire, setHire] = useState(false);
+  const [email, setEmail] = useState("");
+  const [mobile, setMobile] = useState("");
+  const [role, setRole] = useState("");
+  const [work, setWork] = useState(false);
+  const [hire, setHire] = useState(false);
+
+  const clearAllFields = () => {
+    setName("");
+    setEmail("");
+    setMobile("");
+    setRole("");
+    setWork(false);
+    setHire(false);
+  }
+
+  const onSignupForEarlyAccess = () => {
+    let data = {
+      fullName: name,
+      emailId: email,
+      phoneNumber: mobile,
+      userType: hire ? "Client" : "Freelancer",
+      userRole: role
+    }
+
+    let resp = sendEarlyAccessDataToBackend(data);
+
+    resp.then((res) => {
+      if (res.data.success) {
+        alert("Signed Up for Early Access");
+        clearAllFields();
+      }else{
+        alert("Something went wrong")
+      }
+    })
+
+  }
+
   return (
     <>
-    <div className="p-1" style={{
-      width: "100vw",
-      backgroundColor: "#072756"
-    }}>
-     <p className="card-header-new pt-2"> Our alpha launch date will be revealed soon!</p>
-    </div>
-    <EarlyAccessNavbar index={2} />
+      <EarlyAccessNavbar index={2} />
       <div>
         <div className="content-container m-5">
           <h3 style={{ textAlign: "center" }}>
@@ -47,41 +74,39 @@ const [hire, setHire] = useState(false);
       {/* Two Buttons in a Row */}
       <div className="row" style={{ justifyContent: "center" }}>
         <button className="btn" id="Hire_btn"
-        onClick={(e) => {
-          if(hire)
-          {
-            setHire(false);
-            e.target.classList.remove("btn-active");
-            e.target.classList.add("btn");
-          }
-          else{
-            setHire(true);
-            setWork(false);
-            e.target.classList.add("btn-active");
-            e.target.classList.remove("btn");
-            document.getElementById("Work_btn").classList.remove("btn-active");
-            document.getElementById("Work_btn").classList.add("btn");
-          }
-        }}
+          onClick={(e) => {
+            if (hire) {
+              setHire(false);
+              e.target.classList.remove("btn-active");
+              e.target.classList.add("btn");
+            }
+            else {
+              setHire(true);
+              setWork(false);
+              e.target.classList.add("btn-active");
+              e.target.classList.remove("btn");
+              document.getElementById("Work_btn").classList.remove("btn-active");
+              document.getElementById("Work_btn").classList.add("btn");
+            }
+          }}
 
         >Want to Hire</button>
         <button className="btn" id="Work_btn"
-        onClick={(e)=>{
-          if(work)
-          {
-            setWork(false);
-            e.target.classList.remove("btn-active");
-            e.target.classList.add("btn");
-          }
-          else{
-            setWork(true);
-            setHire(false);
-            e.target.classList.add("btn-active");
-            e.target.classList.remove("btn");
-            document.getElementById("Hire_btn").classList.remove("btn-active");
-            document.getElementById("Hire_btn").classList.add("btn");
-          }
-        }}
+          onClick={(e) => {
+            if (work) {
+              setWork(false);
+              e.target.classList.remove("btn-active");
+              e.target.classList.add("btn");
+            }
+            else {
+              setWork(true);
+              setHire(false);
+              e.target.classList.add("btn-active");
+              e.target.classList.remove("btn");
+              document.getElementById("Hire_btn").classList.remove("btn-active");
+              document.getElementById("Hire_btn").classList.add("btn");
+            }
+          }}
         >Want to Work</button>
       </div>
 
@@ -95,12 +120,14 @@ const [hire, setHire] = useState(false);
           type="text"
           placeholder="Enter Your Full Name"
           onChange={(e) => {
-            if(e.target.value !== ""){
-            setName(e.target.value);
-            e.target.classList.add("input-outlined");
-          }
-            else{e.target.classList.add("input-outlined-error");
-            e.target.classList.remove("input-outlined");} 
+            if (e.target.value !== "") {
+              setName(e.target.value);
+              e.target.classList.add("input-outlined");
+            }
+            else {
+              e.target.classList.add("input-outlined-error");
+              e.target.classList.remove("input-outlined");
+            }
           }}
         />
         <input
@@ -108,12 +135,14 @@ const [hire, setHire] = useState(false);
           type="text"
           placeholder="Enter your email address"
           onChange={(e) => {
-            if(e.target.value !== ""){
-            setEmail(e.target.value);
-            e.target.classList.add("input-outlined");
-          }
-            else{e.target.classList.add("input-outlined-error");
-            e.target.classList.remove("input-outlined");}
+            if (e.target.value !== "") {
+              setEmail(e.target.value);
+              e.target.classList.add("input-outlined");
+            }
+            else {
+              e.target.classList.add("input-outlined-error");
+              e.target.classList.remove("input-outlined");
+            }
           }}
         />
         <input
@@ -121,12 +150,14 @@ const [hire, setHire] = useState(false);
           type="text"
           placeholder="Enter mobile number"
           onChange={(e) => {
-            if(e.target.value !== ""){
-            setMobile(e.target.value);
-            e.target.classList.add("input-outlined");
-          }
-            else{e.target.classList.add("input-outlined-error");
-            e.target.classList.remove("input-outlined");}
+            if (e.target.value !== "") {
+              setMobile(e.target.value);
+              e.target.classList.add("input-outlined");
+            }
+            else {
+              e.target.classList.add("input-outlined-error");
+              e.target.classList.remove("input-outlined");
+            }
           }}
         />
         <select
@@ -135,7 +166,7 @@ const [hire, setHire] = useState(false);
           style={{ visibility: work ? "visible" : "collapse" }}
           defaultValue={"1"}
           onChange={(e) => {
-            if(e.target.value !== "1"){
+            if (e.target.value !== "1") {
               setRole(e.target.value);
             }
           }}
@@ -153,15 +184,7 @@ const [hire, setHire] = useState(false);
       </div>
       <div style={{ justifyContent: "center", display: "flex" }}>
         <button className="btn-early-access ps-5 pe-5 pt-3 pb-2 mt-2 mb-1"
-        onClick={()=>{
-          var data = {
-            name: name,
-            email: email,
-            mobile: mobile,
-            role: role,
-            hireOrWork: hire ? "Hire" : "Work"
-          };
-        }}
+          onClick={onSignupForEarlyAccess}
         >
           <h4>Submit</h4>
         </button>
@@ -348,9 +371,9 @@ const [hire, setHire] = useState(false);
         </h3>
       </div>
       <div className="justify-content-center flex-on">
-      <button className="btn-early-access"><h4>Get Early Access</h4></button>
+        <button className="btn-early-access"><h4>Get Early Access</h4></button>
       </div>
-      <StayUpdatedComponent /> 
+      <StayUpdatedComponent />
       <EarlyAccessFooter />
     </>
   );
