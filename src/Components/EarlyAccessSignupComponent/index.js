@@ -49,7 +49,8 @@ const EarlyAccessSignupComponent = () => {
 
     resp.then((res) => {
       if (res.data.success) {
-        alert("Signed Up for Early Access");
+        var popUp = document.getElementsByClassName("pop-up");
+        popUp[0].style.display = "flex";
         clearAllFields();
       }else{
         alert("Something went wrong")
@@ -60,7 +61,47 @@ const EarlyAccessSignupComponent = () => {
 
   return (
     <>
-      <EarlyAccessNavbar index={2} />
+    {/* Pop Up With Header Icon Content and a Button hidden till press submit */}
+    <div className="pop-up" onClick={(e) => {
+      if (e.target.className === "pop-up") {
+        document.querySelector(".pop-up").style.display = "none";
+      }
+    } }>
+      <div className="pop-up-content">
+        <div className="pop-up-header">
+          <h2 className="pop-up-title">Thank you for signing up</h2>
+          <img 
+          style={{
+            height: "8rem",
+            display: "block",
+            mixBlendMode: "multiply",
+            marginLeft: "auto",
+            marginRight: "auto",
+          }}
+          src="https://res.cloudinary.com/skillcoup/image/upload/v1681227430/EarlyAccessWhoWeAre/image_12Tick_dvk9ne.png" alt="Thank You" />
+        </div>
+        <div className="pop-up-body">
+          <h2
+          style={{
+            fontSize: "2rem",
+          }}
+          >Join our Telegram Community</h2>
+          <p className="mt-2">Stay updated with latest trends
+            <br/>and further updates </p>
+        </div>
+        <div className="pop-up-footer">
+          <button className="btn-early-access mt-4" id="pop-up-btn">Join Now</button>
+        </div>
+      </div>
+    </div>
+
+    <div className="p-1" style={{
+      width: "100vw",
+      backgroundColor: "#072756"
+    }}>
+     <p className="card-header-new pt-2"> Our alpha launch date will be revealed soon!</p>
+    </div>
+    <EarlyAccessNavbar index={0} />
       <div>
         <div className="content-container m-5">
           <h3 style={{ textAlign: "center" }}>
