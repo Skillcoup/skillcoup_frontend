@@ -15,7 +15,7 @@ import EarlyAccessHomePage from "./Pages/EarlyAccessHomePage";
 
 
 function App() {
-  let isEarlyAccessLive = process.env.REACT_APP_EARLY_ACCESS || true;
+  let isEarlyAccessLive = process.env.REACT_APP_EARLY_ACCESS;
   return (
     <div className='App'>
       {!isEarlyAccessLive && (<Routes>
