@@ -96,14 +96,14 @@ const EarlyAccessSignupComponent = () => {
     </div>
 
     <div className="p-1" style={{
-      width: "100vw",
+      width: "100%",
       backgroundColor: "#072756"
     }}>
      <p className="card-header-new pt-2"> Our alpha launch date will be revealed soon!</p>
     </div>
     <EarlyAccessNavbar index={0} />
       <div>
-        <div className="content-container m-5">
+        <div className="content-container mt-5 mb-5">
           <h3 style={{ textAlign: "center" }}>
             <strong style={{ color: "#072756" }}>Sign Up For </strong>
             <strong className="colored-Text-Header"> Early</strong>
@@ -154,7 +154,7 @@ const EarlyAccessSignupComponent = () => {
       {/* Form Starts */}
       <div
         className="content-container row"
-        style={{ justifyContent: "center", display: "flex", margin: "2rem" }}
+        style={{ justifyContent: "center", display: "flex", marginTop: "2rem", marginBottom: "2rem" }}
       >
         <input
           className="input-outlined"
@@ -368,7 +368,7 @@ const EarlyAccessSignupComponent = () => {
           >
             <p class="text-features m-1">Accept{" "}</p>
             <p class="text-features-color m-1">Proposal</p>
-            <p class="text-features m-1">{"\tand Start Working"}</p>
+            <p class="text-features m-1">{" "}{"and Start Working"}</p>
           </div>
         </div>
         <div className="tick-cards p-3 m-3">

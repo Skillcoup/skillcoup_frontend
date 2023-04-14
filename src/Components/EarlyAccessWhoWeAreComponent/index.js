@@ -15,20 +15,20 @@ const EarlyAccesswhoWeAreComponent = () => {
       <EarlyAccessNavbar index={2} />
       <div className='flex flex-row justify-between  bg-skillcoup-graident'>
         {/* left side div */}
-        <div className='flex flex-col justify-center ml-20'>
-          <div className='flex flex-row'>
-            <h2 className='font-bold text-6xl'>Platform for</h2>
+        <div className='flex flex-col mt-20 ml-5 justify-center v-screen'>
+          <div className='flex flex-row' >
+            <h2 className='font-bold header-platform'>Platform for</h2>
           </div>
-          <h2 className='font-bold text-6xl'>Creativity & Work</h2>
+          <h2 className='font-bold header-platform'>Creativity & Work</h2>
           <button className='mt-3 ml-3 global-btn-large' onClick={()=>{navigate("/early-access")}}>Get Early Access</button>
         </div>
-        <div className='flex mt-10 mr-16 justify-end'>
-          <img src="https://res.cloudinary.com/skillcoup/image/upload/v1680193825/EarlyAccessWhoWeAre/who-we-are_rexlkl.png" height="80%" width="80%" />
+        <div className='flex justify-end flex-col items-end m-0 p-0'>
+          <img src="https://res.cloudinary.com/skillcoup/image/upload/v1680193825/EarlyAccessWhoWeAre/who-we-are_rexlkl.png" height="90%" width="90%" />
         </div>
       </div>
 
       <div
-        className="row header"
+        className="row header text-xl5"
         style={{ justifyContent: "center", marginTop: "5%" }}
       >
         We Believe
@@ -44,7 +44,7 @@ const EarlyAccesswhoWeAreComponent = () => {
         <text
           className="text-contnt"
           style={{
-            width: "80vw",
+            width: "90vw",
           }}
         >
           At Skillcoup, we are passionate about empowering professionals to
@@ -72,7 +72,7 @@ const EarlyAccesswhoWeAreComponent = () => {
           the freelance industry.
         </text>
       </div>
-      <div className="row header" style={{ justifyContent: "center" }}>
+      <div className="row header mb-5" style={{ justifyContent: "center" }}>
         Join the revolution of freelancing with
         <br />
         Skillcoup's early access program
@@ -91,12 +91,16 @@ const EarlyAccesswhoWeAreComponent = () => {
         Blogs For You
       </div>
       <div className="row mb-5" style={{
-        justifyContent: "space-around",
+
         maxWidth: "100vw",
         width: "fit-content",
-        minWidth: "70vw",
+        minWidth: "90vw",
         margin: "auto",
         display: "flex",
+        // if screen size is less than 768px then flex direction is column
+        flexDirection: window.innerWidth < 768 ? "column" : "row",
+        justifyContent: window.innerWidth < 768 ? "center" : "space-around",
+        alignItems: "center",
       }}>
         <div className="blog-card">
           <img
@@ -148,7 +152,8 @@ const EarlyAccesswhoWeAreComponent = () => {
         margin: "auto",
       }}>
         <div style={{
-          maxWidth: "20vw",
+          maxWidth: "18vw",
+          justifyContent: "center",
         }}>
           <img
             src='https://res.cloudinary.com/skillcoup/image/upload/v1680197176/EarlyAccessWhoWeAre/Icon_aqir0y.svg'
@@ -157,7 +162,7 @@ const EarlyAccesswhoWeAreComponent = () => {
           <text>{"  Safe Payment"}</text>
         </div >
         <div style={{
-          maxWidth: "20vw",
+          maxWidth: "18vw",
         }}>
           <img
             src='https://res.cloudinary.com/skillcoup/image/upload/v1680197176/EarlyAccessWhoWeAre/Icon_aqir0y.svg'
@@ -166,7 +171,7 @@ const EarlyAccesswhoWeAreComponent = () => {
           <text>{"  Plenty of Opportunities"}</text>
         </div>
         <div style={{
-          maxWidth: "20vw",
+          maxWidth: "18vw",
         }}>
           <img
             src='https://res.cloudinary.com/skillcoup/image/upload/v1680197176/EarlyAccessWhoWeAre/Icon_aqir0y.svg'
@@ -175,7 +180,7 @@ const EarlyAccesswhoWeAreComponent = () => {
           <text>{"  Verified Profiles"}</text>
         </div>
         <div style={{
-          maxWidth: "20vw",
+          maxWidth: "18vw",
         }}>
           <img
             src='https://res.cloudinary.com/skillcoup/image/upload/v1680197176/EarlyAccessWhoWeAre/Icon_aqir0y.svg'

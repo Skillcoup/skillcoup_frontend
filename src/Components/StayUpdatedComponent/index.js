@@ -39,16 +39,16 @@ const StayUpdatedComponent = () => {
         display: "flex",
       }}
     >
-      <div className="footer-card m-4">
+      <div className="footer-card mt-4 mb-4">
         <div className="card-head text-align-center">
           <h2 className="footer-card-header mb-3">Stay updated at</h2>
         </div>
         {/* Inline Row of Icons */}
-        <div className="flex flex-row justify-center">
+        <div className="flex flex-row justify-center mt-5">
           {socialMediaArray.map((item) => {
             return (
               <a href={item.link}>
-              <img src={item.imgSrc} height={40} width={40} alt={item.name} className="ml-4 mr-4"/>
+              <img src={item.imgSrc} height={"45rem"} width={"45rem"} alt={item.name} className="ml-3 mr-3"/>
               </a>
             )
           })}

@@ -50,9 +50,9 @@
   font-family: "Poppins";
   font-style: normal;
   padding: 0.75rem;
-  padding-left: 4.5rem;
-  padding-right: 4.5rem;
-  
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  font-size: 0.75rem;
 }
 
 .global-btn-large:hover {
@@ -62,4 +62,8 @@
   color: #fff;
   box-shadow: 0px 0px 33px 10px #d9e2ef;
   border-radius: 48px;
+}
+
+.header-platform{
+  font-size: 6vmin;
 }

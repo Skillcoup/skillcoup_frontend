@@ -10,8 +10,8 @@ import { useNavigate } from 'react-router'
 const WeServeForComponent = ({ title, imgSrc }) => {
 
   return (
-    <div className='flex flex-col justify-center items-center border-2 shadow-2xl max-w-[20rem] w-[14rem] h-[14rem] mr-12 ml-12 mb-4 mt-4 pt-4 pb-4'>
-      <img src={imgSrc} height={100} width={100} alt={title} />
+    <div className='flex flex-col justify-center items-center border-2 shadow-2xl max-w-[20rem] w-[14rem] h-[14rem] mx-auto  mb-4 mt-4 pt-4 pb-4'>
+      <img src={imgSrc} className="mx-auto" height={100} width={100} alt={title} />
       <h2 className='flex mt-4 font-semibold skillcoup-header-dark-color'>{title}</h2>
     </div>
   )
@@ -73,16 +73,16 @@ const EarlyAccessHomeComponent = () => {
       <EarlyAccessNavbar index={1} />
       <div className='flex flex-row justify-between  bg-skillcoup-graident'>
         {/* left side div */}
-        <div className='flex flex-col justify-center ml-20'>
+        <div className='flex flex-col mt-20 ml-5 justify-center v-screen'>
           <div className='flex flex-row'>
-            <h2 className='font-bold text-6xl'>Make Your</h2>
-            <h2 className='font-bold text-6xl bg-skillcoup-gradient-text ml-2'> {changingtext}</h2>
+            <h2 className='font-bold header-platform whitespace-nowrap'>Make Your</h2>
+            <h2 className='font-bold header-platform bg-skillcoup-gradient-text ml-2'> {changingtext}</h2>
           </div>
-          <h2 className='font-bold text-6xl'>Work for You</h2>
+          <h2 className='font-bold header-platform whitespace-nowrap'>Work for You</h2>
           <button className='mt-3 ml-3 global-btn-large' onClick={()=>{navigate("/early-access")}}>Get Early Access</button>
         </div>
-        <div className='flex mt-10 mr-16'>
-          <img src='https://res.cloudinary.com/skillcoup/image/upload/v1680190584/5260432-removebg-preview_1_gaoxno.svg' height="100%" width="100%" />
+        <div className='flex justify-end flex-col items-end m-0 p-0'>
+          <img src='https://res.cloudinary.com/skillcoup/image/upload/v1680190584/5260432-removebg-preview_1_gaoxno.svg' height="90%" width="90%" />
         </div>
       </div>
       <h2 className='flex justify-center mt-10 mb-2 font-bold text-4xl skillcoup-header-dark-color'>We Serve For</h2>
