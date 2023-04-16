@@ -57,7 +57,7 @@ const EarlyAccesswhoWeAreComponent = () => {
           <div className='flex flex-row'>
             <h1 className='font-bold text-6xl'>Platform for</h1>
           </div>
-          <h2 className='font-bold text-6xl'>Creativity & Work</h2>
+          <h2 className='font-bold text-6xl bg-skillcoup-gradient-text'>Creativity & Work</h2>
           <button className='mt-5 ml-3 global-btn-large' onClick={() => { navigate("/early-access") }}>Get Early Access</button>
         </div>
         <div className='flex mt-10 w-1/2 justify-end'>

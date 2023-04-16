@@ -10,6 +10,7 @@ import { sendEarlyAccessDataToBackend } from "../../Service/earlyAcess.service";
 
 
 
+
 const list = [
   "Design",
   "Writing & Translation",
@@ -208,17 +209,19 @@ const EarlyAccessSignupComponent = () => {
       </div>
 
       <div className="flex flex-row justify-center">
-        <div className="border-2 drop-shadow-lg w-1/3 text-2xl flex justify-center flex-col pl-5 ml-10 pt-3 pb-3 rounded-3xl">
+        <div className="border-2 drop-shadow-lg w-1/3 text-2xl flex items-center flex-col pl-5 ml-10 pt-3 pb-3 rounded-3xl">
           <h3 className="bg-skillcoup-gradient-text font-semibold pb-2">The Old Way</h3>
           <h4 className="text-lg">Heavy commission</h4>
           <h4 className="text-lg"> Payment delay</h4>
           <h4 className="text-lg">Unverified profiles </h4>
           <h4 className="text-lg">Lack of support</h4>
         </div>
-        <div className="border-2 drop-shadow-lg w-1/3 flex justify-center bg-skillcoup-gradient flex-col pl-5 ml-10 pt-3 pb-3 rounded-3xl">
+        <div className="border-2 drop-shadow-lg w-1/3 flex items-center bg-skillcoup-gradient flex-col pl-5 ml-10 pt-3 pb-3 rounded-3xl">
  
         <h3 className="skillcoup-header-dark-color text-2xl font-semibold pb-2 text-white">The Skillcoup Way</h3>
-          <h4 className="text-white text-lg">No commission</h4>
+          <h4 className="text-white text-lg flex flex-row">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path d="M10.0007 15.1709L19.1931 5.97852L20.6073 7.39273L10.0007 17.9993L3.63672 11.6354L5.05093 10.2212L10.0007 15.1709Z"></path></svg>
+            No commission</h4>
           <h4 className="text-white text-lg">On time Payment</h4>
           <h4 className="text-white text-lg">Verified profiles </h4>
           <h4 className="text-white text-lg">Priority support</h4>

@@ -163,7 +163,7 @@ const EarlyAccessHomeComponent = () => {
         </div>
       </div>
       {/* Signup for early Access */}
-      <div className='flex justify-center flex-col items-center'>
+      <div className='flex justify-center flex-col items-center mt-16 mb-24'>
         <h2 className=' mt-20 font-bold text-5xl skillcoup-header-dark-color'>Signup for Early Access</h2>
         <button className='mt-5 ml-3 global-btn-large'>Get Early Access</button>
       </div>
