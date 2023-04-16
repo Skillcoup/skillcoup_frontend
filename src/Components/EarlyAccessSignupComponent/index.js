@@ -51,7 +51,7 @@ const EarlyAccessSignupComponent = () => {
       if (res.data.success) {
         alert("Signed Up for Early Access");
         clearAllFields();
-      }else{
+      } else {
         alert("Something went wrong")
       }
     })
@@ -207,95 +207,21 @@ const EarlyAccessSignupComponent = () => {
         </p>
       </div>
 
-      <div className="row" style={{ justifyContent: "center" }}>
-        <div className="card  card-old-way m-2 p-4 ps-5 pe-5">
-          <div className="card-head text-align-center">
-            <h5 className="card-title card-header-old">The old way</h5>
-          </div>
-          <div className="card-body">
-            <p
-              className="card-text card-text-old"
-              style={{ textAlign: "left" }}
-            >
-              Heavy commission
-              <br />
-              Payment delay
-              <br />
-              Unverified profiles
-              <br />
-              Lack of support
-            </p>
-          </div>
+      <div className="flex flex-row justify-center">
+        <div className="border-2 drop-shadow-lg w-1/3 text-2xl flex justify-center flex-col pl-5 ml-10 pt-3 pb-3 rounded-3xl">
+          <h3 className="bg-skillcoup-gradient-text font-semibold pb-2">The Old Way</h3>
+          <h4 className="text-lg">Heavy commission</h4>
+          <h4 className="text-lg"> Payment delay</h4>
+          <h4 className="text-lg">Unverified profiles </h4>
+          <h4 className="text-lg">Lack of support</h4>
         </div>
-        <div className="card card-new-way m-2 p-4 ps-5 pe-5">
-          <div className="card-head text-align-center">
-            <h5 className="card-title card-header-new">The New Way</h5>
-          </div>
-          <div>
-            <div className="card-body">
-              <p className="card-text card-text-new">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="0.85rem"
-                  height="0.85rem"
-                  viewBox="0 0 25 23"
-                  fill="none"
-                  style={{ maxWidth: "fit-content" }}
-                >
-                  <path
-                    d="M24.4768 0.67046C25.1744 1.56298 25.1744 3.00529 24.4768 3.89781L10.1903 22.1766C9.49272 23.0691 8.36542 23.0691 7.66784 22.1766L0.52302 13.0372C-0.17434 12.1447 -0.17434 10.7024 0.52302 9.80986C1.22049 8.91734 2.35114 8.91734 3.04872 9.80986L8.87884 17.3284L21.9543 0.67046C22.6519 -0.223487 23.7792 -0.223487 24.4768 0.67046Z"
-                    fill="white"
-                  />
-                </svg>
-                {"  "}No commission
-                <br />
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="0.85rem"
-                  height="0.85rem"
-                  viewBox="0 0 25 23"
-                  fill="none"
-                  style={{ maxWidth: "fit-content" }}
-                >
-                  <path
-                    d="M24.4768 0.67046C25.1744 1.56298 25.1744 3.00529 24.4768 3.89781L10.1903 22.1766C9.49272 23.0691 8.36542 23.0691 7.66784 22.1766L0.52302 13.0372C-0.17434 12.1447 -0.17434 10.7024 0.52302 9.80986C1.22049 8.91734 2.35114 8.91734 3.04872 9.80986L8.87884 17.3284L21.9543 0.67046C22.6519 -0.223487 23.7792 -0.223487 24.4768 0.67046Z"
-                    fill="white"
-                  />
-                </svg>
-                {"  "}On time payment
-                <br />
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="0.85rem"
-                  height="0.85rem"
-                  viewBox="0 0 25 23"
-                  fill="none"
-                  style={{ maxWidth: "fit-content" }}
-                >
-                  <path
-                    d="M24.4768 0.67046C25.1744 1.56298 25.1744 3.00529 24.4768 3.89781L10.1903 22.1766C9.49272 23.0691 8.36542 23.0691 7.66784 22.1766L0.52302 13.0372C-0.17434 12.1447 -0.17434 10.7024 0.52302 9.80986C1.22049 8.91734 2.35114 8.91734 3.04872 9.80986L8.87884 17.3284L21.9543 0.67046C22.6519 -0.223487 23.7792 -0.223487 24.4768 0.67046Z"
-                    fill="white"
-                  />
-                </svg>
-                {"  "}Verified profiles
-                <br />
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="0.85rem"
-                  height="0.85rem"
-                  viewBox="0 0 25 23"
-                  fill="none"
-                  style={{ maxWidth: "fit-content" }}
-                >
-                  <path
-                    d="M24.4768 0.67046C25.1744 1.56298 25.1744 3.00529 24.4768 3.89781L10.1903 22.1766C9.49272 23.0691 8.36542 23.0691 7.66784 22.1766L0.52302 13.0372C-0.17434 12.1447 -0.17434 10.7024 0.52302 9.80986C1.22049 8.91734 2.35114 8.91734 3.04872 9.80986L8.87884 17.3284L21.9543 0.67046C22.6519 -0.223487 23.7792 -0.223487 24.4768 0.67046Z"
-                    fill="white"
-                  />
-                </svg>
-                {"  "}Priority support
-              </p>
-            </div>
-          </div>
+        <div className="border-2 drop-shadow-lg w-1/3 flex justify-center bg-skillcoup-gradient flex-col pl-5 ml-10 pt-3 pb-3 rounded-3xl">
+ 
+        <h3 className="skillcoup-header-dark-color text-2xl font-semibold pb-2 text-white">The Skillcoup Way</h3>
+          <h4 className="text-white text-lg">No commission</h4>
+          <h4 className="text-white text-lg">On time Payment</h4>
+          <h4 className="text-white text-lg">Verified profiles </h4>
+          <h4 className="text-white text-lg">Priority support</h4>
         </div>
       </div>
 
@@ -307,7 +233,7 @@ const EarlyAccessSignupComponent = () => {
         </h3>
       </div>
       <div className="justify-content-center flex-on row">
-        <div className="tick-cards p-3 m-3">
+        <div className="tick-cards p-3 w-2/3 mb-2 ">
           <div
             style={{
               display: "flex",
@@ -318,7 +244,7 @@ const EarlyAccessSignupComponent = () => {
             <p class="text-features-color">It's Free</p>
           </div>
         </div>
-        <div className="tick-cards p-3 m-3">
+        <div className="tick-cards p-3 w-2/3 mb-2 ">
           <div
             style={{
               display: "flex",
@@ -330,7 +256,7 @@ const EarlyAccessSignupComponent = () => {
             <p class="text-features m-1">{"\tand Start Working"}</p>
           </div>
         </div>
-        <div className="tick-cards p-3 m-3">
+        <div className="tick-cards p-3 w-2/3 mb-2">
           <div
             style={{
               display: "flex",
@@ -341,7 +267,7 @@ const EarlyAccessSignupComponent = () => {
             <p class="text-features m-1">{"Profiles"}</p>
           </div>
         </div>
-        <div className="tick-cards p-3 m-3">
+        <div className="tick-cards p-3 w-2/3 mb-2 ">
           <div
             style={{
               display: "flex",
@@ -353,7 +279,7 @@ const EarlyAccessSignupComponent = () => {
             <p class="text-features m-1">with</p>
           </div>
         </div>
-        <div className="tick-cards p-3 m-3">
+        <div className="tick-cards p-3 w-2/3 mb-2">
           <div
             style={{
               display: "flex",
@@ -371,7 +297,7 @@ const EarlyAccessSignupComponent = () => {
         </h3>
       </div>
       <div className="justify-content-center flex-on">
-        <button className="btn-early-access"><h4>Get Early Access</h4></button>
+        <button className="global-btn-large"><h4>Get Early Access</h4></button>
       </div>
       <StayUpdatedComponent />
       <EarlyAccessFooter />

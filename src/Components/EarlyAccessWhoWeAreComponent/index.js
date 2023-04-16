@@ -55,7 +55,7 @@ const EarlyAccesswhoWeAreComponent = () => {
         {/* left side div */}
         <div className='flex flex-col justify-center ml-20'>
           <div className='flex flex-row'>
-            <h2 className='font-bold text-6xl'>Platform for</h2>
+            <h1 className='font-bold text-6xl'>Platform for</h1>
           </div>
           <h2 className='font-bold text-6xl'>Creativity & Work</h2>
           <button className='mt-5 ml-3 global-btn-large' onClick={() => { navigate("/early-access") }}>Get Early Access</button>
