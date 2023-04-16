@@ -6,9 +6,47 @@ import EarlyAccessNavbar from "../EarlyAccessNavbar";
 import EarlyAccessFooter from "../EarlyAccessFooter";
 import StayUpdatedComponent from "../StayUpdatedComponent";
 import { useNavigate } from "react-router";
+import Lottie from "react-lottie";
+import creativityAnimation from "../../assets/Animation/creativityPlatform.json"
 
+const featuresArray = [
+  {
+    imgSrc: "https://res.cloudinary.com/skillcoup/image/upload/v1681633946/EarlyAccessWhoWeAre/seacurePayment_qhslql.png",
+    title: "Safe Payment"
+  },
+  {
+    imgSrc: "https://res.cloudinary.com/skillcoup/image/upload/v1681633946/EarlyAccessWhoWeAre/verified-user_w7lhoh.png",
+    title: "Verified Profiles"
+  },
+  {
+    imgSrc: "https://res.cloudinary.com/skillcoup/image/upload/v1681633946/EarlyAccessWhoWeAre/encrypted_oho9wx.png",
+    title: "Protected Data"
+  },
+  {
+    imgSrc: "https://res.cloudinary.com/skillcoup/image/upload/v1681633946/EarlyAccessWhoWeAre/idea_plcr5p.png",
+    title: "Pool of Opportunities"
+  },
+
+]
+
+const FeaturesComponent = ({ imgSrc, title }) => {
+  return (
+    <div className="flex items-center justify-start ml-3 mb-10 space-x-4 pl-10 pr-10 pt-4 pb-4 w-1/4  mr-3 border-2 border-gray-200 skillcoup-light-bg rounded-xl drop-shadow-lg">
+      <img src={imgSrc} className="" width={50} height={50} />
+      <h3 className="flex font-semibold">{title}</h3>
+    </div>
+  )
+}
 
 const EarlyAccesswhoWeAreComponent = () => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: creativityAnimation,
+    rendererSettings: {
+      preserveAspectRatio: 'xMidYMid slice'
+    }
+  };
   const navigate = useNavigate();
   return (
     <>
@@ -20,10 +58,11 @@ const EarlyAccesswhoWeAreComponent = () => {
             <h2 className='font-bold text-6xl'>Platform for</h2>
           </div>
           <h2 className='font-bold text-6xl'>Creativity & Work</h2>
-          <button className='mt-3 ml-3 global-btn-large' onClick={()=>{navigate("/early-access")}}>Get Early Access</button>
+          <button className='mt-5 ml-3 global-btn-large' onClick={() => { navigate("/early-access") }}>Get Early Access</button>
         </div>
-        <div className='flex mt-10 mr-16 justify-end'>
+        <div className='flex mt-10 w-1/2 justify-end'>
           <img src="https://res.cloudinary.com/skillcoup/image/upload/v1680193825/EarlyAccessWhoWeAre/who-we-are_rexlkl.png" height="80%" width="80%" />
+          {/* <Lottie options={defaultOptions} width="50%" /> */}
         </div>
       </div>
 
@@ -84,9 +123,24 @@ const EarlyAccesswhoWeAreComponent = () => {
         }}
         className="mt-2 mb-1"
       >
-        <button className="btn-early-access">Get Early Access</button>
+        <button className="global-btn-large mt-5 mb-10">Get Early Access</button>
       </div>
+      <div className="flex flex-wrap justify-center mt-10 mb-3 space-x-36">
+        {featuresArray.slice(0, 2).map((item) => {
+          return (
 
+            <FeaturesComponent title={item.title} imgSrc={item.imgSrc} />
+          )
+        })}
+      </div>
+      <div className="flex justify-center flex-wrap mt-3 space-x-36">
+        {featuresArray.slice(2, 4).map((item) => {
+          return (
+
+            <FeaturesComponent title={item.title} imgSrc={item.imgSrc} />
+          )
+        })}
+      </div>
       <div className="row header" style={{ justifyContent: "center", marginTop: "5%" }}>
         Blogs For You
       </div>
@@ -139,51 +193,6 @@ const EarlyAccesswhoWeAreComponent = () => {
         </div>
       </div>
 
-      <div className="row" style={{
-        display: "flex",
-        justifyContent: "space-around",
-        minWidth: "80vw",
-        maxWidth: "100vw",
-        width: "80vw",
-        margin: "auto",
-      }}>
-        <div style={{
-          maxWidth: "20vw",
-        }}>
-          <img
-            src='https://res.cloudinary.com/skillcoup/image/upload/v1680197176/EarlyAccessWhoWeAre/Icon_aqir0y.svg'
-            alt="icon"
-          />
-          <text>{"  Safe Payment"}</text>
-        </div >
-        <div style={{
-          maxWidth: "20vw",
-        }}>
-          <img
-            src='https://res.cloudinary.com/skillcoup/image/upload/v1680197176/EarlyAccessWhoWeAre/Icon_aqir0y.svg'
-            alt="icon"
-          />
-          <text>{"  Plenty of Opportunities"}</text>
-        </div>
-        <div style={{
-          maxWidth: "20vw",
-        }}>
-          <img
-            src='https://res.cloudinary.com/skillcoup/image/upload/v1680197176/EarlyAccessWhoWeAre/Icon_aqir0y.svg'
-            alt="icon"
-          />
-          <text>{"  Verified Profiles"}</text>
-        </div>
-        <div style={{
-          maxWidth: "20vw",
-        }}>
-          <img
-            src='https://res.cloudinary.com/skillcoup/image/upload/v1680197176/EarlyAccessWhoWeAre/Icon_aqir0y.svg'
-            alt="icon"
-          />
-          <text>{"  Protected Data"}</text>
-        </div>
-      </div>
 
       <StayUpdatedComponent />
       <EarlyAccessFooter />

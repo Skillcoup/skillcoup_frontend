@@ -33,12 +33,7 @@ const StayUpdatedComponent = () => {
   ]
 
   return (
-    <div
-      style={{
-        justifyContent: "center",
-        display: "flex",
-      }}
-    >
+    <div className="flex justify-center mt-12 mb-16" >
       <div className="footer-card m-4">
         <div className="card-head text-align-center">
           <h2 className="footer-card-header mb-3">Stay updated at</h2>

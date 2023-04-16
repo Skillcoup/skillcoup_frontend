@@ -2,10 +2,13 @@ import React from "react";
 import logo from "../../assets/skillcoup_blue.png";
 
 import "./navbar.css";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const EarlyAccessNavbar = ({ index }) => {
   const navigate = useNavigate();
+  const logoNavigation = () => {
+    navigate("/")
+  }
   if (index === 1)
     return (
       // IF index is 1
@@ -23,9 +26,11 @@ const EarlyAccessNavbar = ({ index }) => {
           </p>
         </div>
         <div className="navbar">
-          <div className="navbar-logo">
-            <img className="logo" src={logo} alt="logo" />
-          </div>
+          <Link to={"/"}>
+            <div className="navbar-logo">
+              <img className="logo" src={logo} alt="logo" />
+            </div>
+          </Link>
           <div className="navbar-buttons">
             <button className="active-button" onClick={() => { navigate("/") }}>
               Home
@@ -54,9 +59,11 @@ const EarlyAccessNavbar = ({ index }) => {
           </p>
         </div>
         <div className="navbar">
-          <div className="navbar-logo">
-            <img className="logo" src={logo} alt="logo" />
-          </div>
+          <Link to={"/"}>
+            <div className="navbar-logo">
+              <img className="logo" src={logo} alt="logo" />
+            </div>
+          </Link>
           <div className="navbar-buttons">
             <button className="navbar-button" onClick={() => { navigate("/") }}>Home</button>
             <button className="active-button" onClick={() => { navigate("/who-we-are") }}>Who we are</button>
@@ -69,9 +76,11 @@ const EarlyAccessNavbar = ({ index }) => {
       // IF index is 1
       <>
         <div className="navbar">
-          <div className="navbar-logo">
-            <img className="logo" src={logo} alt="logo" />
-          </div>
+          <Link to={"/"}>
+            <div className="navbar-logo">
+              <img className="logo" src={logo} alt="logo" />
+            </div>
+          </Link>
           <div className="navbar-buttons">
             <button className="navbar-button" onClick={() => { navigate("/") }}>Home</button>
             <button className="navbar-button" onClick={() => { navigate("/who-we-are") }}>Who We Are</button>

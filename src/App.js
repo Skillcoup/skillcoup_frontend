@@ -17,7 +17,7 @@ import EarlyAccessHomePage from "./Pages/EarlyAccessHomePage";
 function App() {
   let isEarlyAccessLive = process.env.REACT_APP_EARLY_ACCESS;
   return (
-    <div className='App'>
+    <div className='App overflow-hidden'>
       {!isEarlyAccessLive && (<Routes>
         <Route path='/' element={<Home />} />
         <Route path='/contact' element={<Contact />} />
