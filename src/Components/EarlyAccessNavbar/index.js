@@ -14,13 +14,10 @@ const EarlyAccessNavbar = ({ index }) => {
       // IF index is 1
       <>
         <div
-          className="p-1"
-          style={{
-            width: "100vw",
-            backgroundColor: "#072756",
-          }}
+          className="p-1 skillcoup-dark-bg justify-center items-center"
+
         >
-          <p className="card-header-new pt-2">
+          <p className="font-thin text-white flex justify-center">
             {" "}
             Our alpha launch date will be revealed soon!
           </p>
