@@ -1,0 +1,94 @@
+/** @format */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.global-bg-color{
+  background-color: rgba(217, 226, 239, 0.38);
+}
+
+.bg-skillcoup-gradient {
+  background: linear-gradient(180deg, #35cdff 0%, #072756 210.82%);
+}
+
+.bg-skillcoup-gradient-text {
+  background: linear-gradient(180deg, #35cdff 0%, #072756 210.82%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.skillcoup-dark-bg{
+  background-color: #072756;
+}
+
+.skillcoup-header-dark-color {
+  color: #072756;
+}
+.skillcoup-header-pop-color{
+  color: #35CDFF;
+}
+
+.global-btn-small {
+  background: linear-gradient(180deg, #35cdff 0%, #072756 210.82%);
+  box-shadow: 0px 0px 33px #d9e2ef;
+  border-radius: 48px;
+  color:#fff;
+  max-width: fit-content;
+  font-family: "Poppins";
+  font-style: normal;
+  padding: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* .global-btn-small {
+  background: linear-gradient(180deg, #35cdff 0%, #072756 210.82%);
+  font-family: "Poppins";
+  font-style: normal;
+  color: #fff;
+  box-shadow: 0px 0px 33px 10px #d9e2ef;
+  border-radius: 48px;
+} */
+
+.global-btn-large {
+  background: linear-gradient(180deg, #35cdff 0%, #072756 210.82%);
+  box-shadow: 0px 0px 33px #d9e2ef;
+  border-radius: 48px;
+  color: #fff;
+  font-size: 22px;
+  font-weight: 500;
+  max-width: fit-content;
+  font-family: "Poppins";
+  font-style: normal;
+  padding: 0.75rem;
+  padding-left: 3.2rem;
+  padding-right: 3.2rem;
+}
+.global-btn-large-mobile {
+  background: linear-gradient(180deg, #35cdff 0%, #072756 210.82%);
+  box-shadow: 0px 0px 33px #d9e2ef;
+  border-radius: 48px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  max-width: fit-content;
+  font-family: "Poppins";
+  font-style: normal;
+  padding: 0.75rem;
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+}
+
+.global-btn-large:hover {
+  background: linear-gradient(180deg, #35cdff 0%, #072756 210.82%);
+  font-family: "Poppins";
+  font-style: normal;
+  color: #fff;
+  box-shadow: 0px 0px 33px 10px #d9e2ef;
+  border-radius: 48px;
+}
+
+.skillcoup-light-bg {
+  background-color: rgba(217, 226, 239, 0.38);
+}
