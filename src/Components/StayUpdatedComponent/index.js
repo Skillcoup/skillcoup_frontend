@@ -36,7 +36,7 @@ const StayUpdatedComponent = () => {
   return (
     <div className="flex justify-center ">
       <div className="flex mt-12 mb-16 pt-10 pb-10 rounded-2xl shadow-xl flex-col skillcoup-light-bg w-2/3 items-center justify-center" >
-        <h3 className=" text-xl font-semibold md:text-3xl mb-12">Stay updated at</h3>
+        <h3 className=" text-2xl font-semibold md:text-3xl mb-8 md:mb-12 ">Stay updated at</h3>
         {windowSize.current[0] >= 640 && (<div className="flex flex-row justify-center">
           {socialMediaArray.map((item) => {
             return (
@@ -50,7 +50,7 @@ const StayUpdatedComponent = () => {
           {socialMediaArray.map((item) => {
             return (
               <a href={item.link}>
-                <img src={item.imgSrc} height={30} width={30} alt={item.name} className="ml-4 mr-4" />
+                <img src={item.imgSrc} height={20} width={20} alt={item.name} className="ml-2 mr-2" />
               </a>
             )
           })}

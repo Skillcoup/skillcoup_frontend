@@ -103,7 +103,7 @@ const EarlyAccessHomeComponent = () => {
       </div>
       {windowSize.current[0] >= 640 && (<div>
 
-        <h2 className='flex justify-center mt-10 lg:mt-10 lg:mb-10 font-bold text-3xl lg:text-5xl skillcoup-header-dark-color'>We Serve For</h2>
+        <h2 className='flex justify-center mt-10 lg:mt-10 lg:mb-10 font-bold text-2xl lg:text-5xl skillcoup-header-dark-color'>We Serve For</h2>
         <div className='flex flex-wrap mr-44 ml-44 justify-center '>
           {weServeForArray.slice(0, 3).map((item) => {
             return (
@@ -121,7 +121,7 @@ const EarlyAccessHomeComponent = () => {
       </div>)}
       {windowSize.current[0] < 640 && (
         <div>
-          <h2 className='flex justify-center mt-10 lg:mt-10 lg:mb-10 font-bold text-3xl lg:text-5xl skillcoup-header-dark-color'>We Serve For</h2>
+          <h2 className='flex justify-center mt-10 lg:mt-10 lg:mb-10 font-bold text-2xl lg:text-5xl skillcoup-header-dark-color'>We Serve For</h2>
           <div className='flex flex-wrap justify-center'>
             {weServeForArray.map((item) => {
               return (
@@ -142,50 +142,50 @@ const EarlyAccessHomeComponent = () => {
       </div>
 
       {/* what we offer section */}
-      <h2 className='flex justify-center mt-10 mb-10  font-bold text-3xl md:text-5xl skillcoup-header-dark-color'>What we offer</h2>
+      <h2 className='flex justify-center mt-10 mb-10  font-bold text-2xl md:text-5xl skillcoup-header-dark-color'>What we offer</h2>
 
       <div className="justify-content-center flex-on row space-y-4">
         <div className="p-3 shadow-md rounded-2xl w-2/3 h-1/12 bg-white">
 
-          <div className='flex justify-center ml-6'>
-            <p class="skillcoup-header-pop-color font-medium md:font-semibold md:text-xl text-lg">No commission</p>
-            <p class="skillcoup-header-dark-color font-medium md:font-semibold md:text-xl text-lg pl-1">Platform</p>
+          <div className='flex justify-center'>
+            <p class="skillcoup-header-pop-color font-medium md:font-semibold md:text-xl text-md">No Commission</p>
+            <p class="skillcoup-header-dark-color font-medium md:font-semibold md:text-xl text-md pl-1">Platform</p>
           </div>
         </div>
         <div className="p-3 shadow-md rounded-2xl w-2/3  bg-white">
-          <div className='flex justify-center ml-6'>
-            <p class="skillcoup-header-pop-color font-medium md:font-semibold md:text-xl text-lg">{"Verified"}</p>
-            <p class="skillcoup-header-dark-color font-medium md:font-semibold md:text-xl text-lg pl-1">{"Profiles"}</p>
+          <div className='flex justify-center'>
+            <p class="skillcoup-header-pop-color font-medium md:font-semibold md:text-xl text-md">{"Verified"}</p>
+            <p class="skillcoup-header-dark-color font-medium md:font-semibold md:text-xl text-md pl-1">{"Profiles"}</p>
           </div>
         </div>
         <div className="p-3 shadow-md rounded-2xl w-2/3 bg-white">
-          <div className='flex justify-center ml-6'>
+          <div className='flex justify-center'>
 
-            <p class="skillcoup-header-pop-color font-medium md:font-semibold md:text-xl text-lg">Priority</p>
-            <p class="skillcoup-header-dark-color font-medium md:font-semibold md:text-xl text-lg pl-1">Support</p>
+            <p class="skillcoup-header-pop-color font-medium md:font-semibold md:text-xl text-md">Priority</p>
+            <p class="skillcoup-header-dark-color font-medium md:font-semibold md:text-xl text-md pl-1">Support</p>
           </div>
         </div>
         <div className="p-3 shadow-md rounded-2xl w-2/3  bg-white">
 
-          <div className='flex justify-center ml-6'>
+          <div className='flex justify-center'>
 
-            <p class="tskillcoup-header-dark-color font-medium md:font-semibold md:text-xl text-lg pl-1">Post a Job-</p>
-            <p class="skillcoup-header-pop-color font-medium md:font-semibold md:text-xl text-lg"> It's</p>
-            <p class="skillcoup-header-pop-color font-medium md:font-semibold md:text-xl text-lg">Free</p>
+            <p class="tskillcoup-header-dark-color font-medium md:font-semibold md:text-xl text-md pl-1">Post a Job-</p>
+            <p class="skillcoup-header-pop-color font-medium md:font-semibold md:text-xl text-md"> It's</p>
+            <p class="skillcoup-header-pop-color font-medium md:font-semibold md:text-xl text-md">Free</p>
           </div>
         </div>
         <div className="p-3 shadow-md rounded-2xl w-2/3 bg-white">
 
-          <div className='flex justify-center ml-6'>
+          <div className='flex justify-center '>
 
-            <p class="skillcoup-header-dark-color font-medium md:font-semibold md:text-xl text-lg pl-1">Early Access</p>
-            <p class="skillcoup-header-pop-color font-medium md:font-semibold md:text-xl text-lg">to new updates</p>
+            <p class="skillcoup-header-dark-color font-medium md:font-semibold md:text-xl text-md pl-1 pr-1">Early Access to</p>
+            <p class="skillcoup-header-pop-color font-medium md:font-semibold md:text-xl text-md">New Updates</p>
           </div>
         </div>
       </div>
       {/* Signup for early Access */}
-      <div className='flex justify-center flex-col items-center mt-10 mb-12 md:mt-16 md:mb-24'>
-        <h2 className=' mt-20 font-bold text-3xl md:text-5xl skillcoup-header-dark-color'>Signup for Early Access</h2>
+      <div className='flex justify-center flex-col items-center mt-6 mb-10 md:mt-16 md:mb-24'>
+        <h2 className=' mt-20 font-bold text-2xl md:text-5xl skillcoup-header-dark-color'>Signup for Early Access</h2>
         {windowSize.current[0] > 640 && (<button className='mt-5 ml-3 global-btn-large'>Get Early Access</button>)}
         {windowSize.current[0] <= 640 && (<button className='mt-3 ml-3 global-btn-large-mobile' onClick={() => { navigate("/early-access") }}>Get Early Access</button>)}
 
